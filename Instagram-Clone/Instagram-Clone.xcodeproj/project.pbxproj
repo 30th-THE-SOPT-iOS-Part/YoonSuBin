@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8E37313E27FED34F00942C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37313D27FED34F00942C46 /* AppDelegate.swift */; };
 		8E37314027FED34F00942C46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37313F27FED34F00942C46 /* SceneDelegate.swift */; };
-		8E37314227FED34F00942C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37314127FED34F00942C46 /* ViewController.swift */; };
+		8E37314227FED34F00942C46 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37314127FED34F00942C46 /* LoginVC.swift */; };
 		8E37314527FED34F00942C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E37314327FED34F00942C46 /* Main.storyboard */; };
 		8E37314727FED35000942C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E37314627FED35000942C46 /* Assets.xcassets */; };
 		8E37314A27FED35000942C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E37314827FED35000942C46 /* LaunchScreen.storyboard */; };
+		8E37315827FEDFDB00942C46 /* SignUpNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37315727FEDFDB00942C46 /* SignUpNameVC.swift */; };
+		8E37315A27FEDFFB00942C46 /* SignUpPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37315927FEDFFB00942C46 /* SignUpPasswordVC.swift */; };
+		8E37315C27FEE01A00942C46 /* SignUpCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37315B27FEE01A00942C46 /* SignUpCompleteVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8E37313A27FED34F00942C46 /* Instagram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E37313D27FED34F00942C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E37313F27FED34F00942C46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E37314127FED34F00942C46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E37314127FED34F00942C46 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8E37314427FED34F00942C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E37314627FED35000942C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E37314927FED35000942C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E37314B27FED35000942C46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E37315727FEDFDB00942C46 /* SignUpNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNameVC.swift; sourceTree = "<group>"; };
+		8E37315927FEDFFB00942C46 /* SignUpPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPasswordVC.swift; sourceTree = "<group>"; };
+		8E37315B27FEE01A00942C46 /* SignUpCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCompleteVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,11 @@
 			children = (
 				8E37313D27FED34F00942C46 /* AppDelegate.swift */,
 				8E37313F27FED34F00942C46 /* SceneDelegate.swift */,
-				8E37314127FED34F00942C46 /* ViewController.swift */,
 				8E37314327FED34F00942C46 /* Main.storyboard */,
+				8E37314127FED34F00942C46 /* LoginVC.swift */,
+				8E37315727FEDFDB00942C46 /* SignUpNameVC.swift */,
+				8E37315927FEDFFB00942C46 /* SignUpPasswordVC.swift */,
+				8E37315B27FEE01A00942C46 /* SignUpCompleteVC.swift */,
 				8E37314627FED35000942C46 /* Assets.xcassets */,
 				8E37314827FED35000942C46 /* LaunchScreen.storyboard */,
 				8E37314B27FED35000942C46 /* Info.plist */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E37314227FED34F00942C46 /* ViewController.swift in Sources */,
+				8E37314227FED34F00942C46 /* LoginVC.swift in Sources */,
+				8E37315827FEDFDB00942C46 /* SignUpNameVC.swift in Sources */,
 				8E37313E27FED34F00942C46 /* AppDelegate.swift in Sources */,
+				8E37315C27FEE01A00942C46 /* SignUpCompleteVC.swift in Sources */,
+				8E37315A27FEDFFB00942C46 /* SignUpPasswordVC.swift in Sources */,
 				8E37314027FED34F00942C46 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
