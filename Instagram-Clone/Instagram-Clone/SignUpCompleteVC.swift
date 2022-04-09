@@ -15,6 +15,7 @@ class SignUpCompleteVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setName()
     }
     
     @IBAction func completeBtnDidTap(_ sender: Any) {
@@ -25,7 +26,6 @@ class SignUpCompleteVC: UIViewController {
         if let message = message {
             welcomeMessage.text = "\(message)님, Instagram에 오신 것을 환영합니다"
             self.welcomeMessage.numberOfLines = 0
-            setName()
             welcomeMessage.sizeToFit()
         }
     }
