@@ -25,12 +25,7 @@ class LoginVC: UIViewController {
     
     @IBAction func showPasswordBtnDidTap(_ sender: UIButton) {
         sender.isSelected.toggle()
-        if sender.isSelected {
-            passwordTextField.isSecureTextEntry.toggle()
-            sender.setImage(UIImage(named: "password%20shown%20eye%20icon"), for: .normal) }
-        else {
-            sender.setImage(UIImage(named: "password%20hidden%20eye%20icon"), for: .normal)
-        }
+        passwordTextField.isSecureTextEntry = !sender.isSelected
     }
     
     @IBAction func loginBtnDidTap(_ sender: Any) {

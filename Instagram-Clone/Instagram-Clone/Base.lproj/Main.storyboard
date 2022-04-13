@@ -80,12 +80,13 @@
                                     <action selector="loginBtnDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djB-WC-Z5k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ao-OL-kZF">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ao-OL-kZF">
                                 <rect key="frame" x="305" y="354" width="44" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGray6Color"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="password%20hidden%20eye%20icon" title=""/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="password%20hidden%20eye%20icon"/>
+                                <state key="selected" image="password%20shown%20eye%20icon"/>
                                 <connections>
                                     <action selector="showPasswordBtnDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pEy-ld-E2v"/>
                                 </connections>
@@ -293,6 +294,7 @@
     <resources>
         <image name="Instagram%20Black%20Logo" width="175" height="50"/>
         <image name="password%20hidden%20eye%20icon" width="20" height="20"/>
+        <image name="password%20shown%20eye%20icon" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
