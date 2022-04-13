@@ -59,9 +59,6 @@ class LoginVC: UIViewController {
     }
     
     private func setupLoginBtn() {
-        loginButton.isEnabled = false
-        loginButton.backgroundColor = UIColor(displayP3Red: 155/255, green: 203/255, blue: 247/255, alpha: 1)
-        loginButton.setTitle("로그인", for: .normal)
         loginButton.setTitleColor(.white, for: .normal)
         loginButton.setTitleColor(.white, for: .disabled)
     }
@@ -72,7 +69,8 @@ class LoginVC: UIViewController {
         
         if (nameTextField.hasText && passwordTextField.hasText) {
             loginButton.isEnabled = true
-           
+            loginButton.backgroundColor = UIColor(displayP3Red: 55/255, green: 151/255, blue: 239/255, alpha: 1)
+            
         } else {
             loginButton.isEnabled = false
             loginButton.backgroundColor = UIColor(displayP3Red: 155/255, green: 203/255, blue: 247/255, alpha: 1)

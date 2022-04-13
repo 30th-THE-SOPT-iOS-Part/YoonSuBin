@@ -42,21 +42,21 @@ class SignUpPasswordVC: UIViewController {
     }
     
     private func setupNextBtn() {
-        nextButton.isEnabled = false
-        nextButton.setTitle("다음", for: .normal)
         nextButton.setTitleColor(.white, for: .normal)
         nextButton.setTitleColor(.white, for: .disabled)
     }
     
-    private func checkTextField() {
-        nextButton.isEnabled = false
-        
-        if passwordTextField.hasText {
-            nextButton.isEnabled = true
-            
-        } else {
-            nextButton.isEnabled = false
-            nextButton.backgroundColor = UIColor(displayP3Red: 155/255, green: 203/255, blue: 247/255, alpha: 1)
+    @objc private func checkTextField() {
+    
+        if let passwordTextField = passwordTextField.text {
+            if !passwordTextField.isEmpty {
+                nextButton.isEnabled = true
+                nextButton.backgroundColor = UIColor(displayP3Red: 55/255, green: 151/255, blue: 239/255, alpha: 1)
+            }
+            else {
+                nextButton.isEnabled = false
+                nextButton.backgroundColor = UIColor(displayP3Red: 155/255, green: 203/255, blue: 247/255, alpha: 1)
+            }
         }
     }
     
