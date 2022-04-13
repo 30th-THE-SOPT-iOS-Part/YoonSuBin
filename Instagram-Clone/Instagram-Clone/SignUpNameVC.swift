@@ -21,9 +21,9 @@ class SignUpNameVC: UIViewController {
     }
     
     @IBAction func nextBtnDidTap(_ sender: Any) {
-        guard let goToNextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpPasswordVC") as? SignUpPasswordVC else { return }
-        goToNextVC.messageName = nameTextField.text
-        self.navigationController?.pushViewController(goToNextVC, animated: true)
+        guard let signUpPasswordVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpPasswordVC") as? SignUpPasswordVC else { return }
+        signUpPasswordVC.messageName = nameTextField.text
+        self.navigationController?.pushViewController(signUpPasswordVC, animated: true)
     }
     
     @IBAction func editNameTF(_ sender: Any) {

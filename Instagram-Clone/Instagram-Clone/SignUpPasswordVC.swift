@@ -24,9 +24,9 @@ class SignUpPasswordVC: UIViewController {
     }
     
     @IBAction func nextBtnDidTap(_ sender: Any) {
-        guard let goToNextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpCompleteVC") as? SignUpCompleteVC else { return }
-        goToNextVC.message = messageName
-        self.present(goToNextVC, animated: true) {
+        guard let signUpCompleteVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpCompleteVC") as? SignUpCompleteVC else { return }
+        signUpCompleteVC.message = messageName
+        self.present(signUpCompleteVC, animated: true) {
             self.navigationController?.popToRootViewController(animated: false)
         }
     }

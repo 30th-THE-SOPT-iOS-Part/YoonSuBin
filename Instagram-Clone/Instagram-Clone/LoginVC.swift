@@ -29,14 +29,14 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginBtnDidTap(_ sender: Any) {
-        guard let goToCompleteVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpCompleteVC") as? SignUpCompleteVC else { return }
+        guard let signUpCompleteVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpCompleteVC") as? SignUpCompleteVC else { return }
         
-        goToCompleteVC.modalPresentationStyle = .fullScreen
-        goToCompleteVC.modalTransitionStyle = .crossDissolve
+        signUpCompleteVC.modalPresentationStyle = .fullScreen
+        signUpCompleteVC.modalTransitionStyle = .crossDissolve
         
-        goToCompleteVC.message = nameTextField.text
+        signUpCompleteVC.message = nameTextField.text
         
-        self.present(goToCompleteVC, animated: true, completion: nil)
+        self.present(signUpCompleteVC, animated: true, completion: nil)
     }
     
     @IBAction func signUpBtnDidTap(_ sender: Any) {
