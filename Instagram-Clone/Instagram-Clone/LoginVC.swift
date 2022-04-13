@@ -40,9 +40,9 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func signUpBtnDidTap(_ sender: Any) {
-        guard let goToPasswordVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpNameVC") as? SignUpNameVC else { return }
+        guard let signUpNameVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpNameVC") as? SignUpNameVC else { return }
         
-        self.navigationController?.pushViewController(goToPasswordVC, animated: true)
+        self.navigationController?.pushViewController(signUpNameVC, animated: true)
     }
     
     @IBAction func editNameTF(_ sender: Any) {
