@@ -1,5 +1,5 @@
 //
-//  SignUpCompleteVC.swift
+//  AuthCompleteViewController.swift
 //  Instagram-Clone
 //
 //  Created by subinyoon on 2022/04/07.
@@ -7,8 +7,10 @@
 
 import UIKit
 
-class SignUpCompleteVC: UIViewController {
-
+class AuthCompleteViewController:
+    UIViewController {
+    
+    // MARK: -
     @IBOutlet weak var welcomeMessage: UILabel!
     
     var message: String?

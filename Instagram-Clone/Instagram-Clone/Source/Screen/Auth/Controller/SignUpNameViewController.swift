@@ -1,5 +1,5 @@
 //
-//  SignUpPasswordVC.swift
+//  SignUpNameViewController.swift
 //  Instagram-Clone
 //
 //  Created by subinyoon on 2022/04/07.
@@ -7,38 +7,36 @@
 
 import UIKit
 
-class SignUpPasswordVC: UIViewController {
+class SignUpNameViewController:
+    UIViewController {
     
-    var messageName : String?
-
-    @IBOutlet weak var passwordMessage: UILabel!
-    @IBOutlet weak var passwordTextField: UITextField!
+    // MARK: -
+    @IBOutlet weak var nameMessage: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setPasswordMessage()
+        setNameMessage()
         setupNextBtn()
         checkTextField()
         setBackBtn()
     }
     
     @IBAction func nextBtnDidTap(_ sender: Any) {
-        guard let signUpCompleteVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpCompleteVC") as? SignUpCompleteVC else { return }
-        signUpCompleteVC.message = messageName
-        self.present(signUpCompleteVC, animated: true) {
-            self.navigationController?.popToRootViewController(animated: false)
-        }
+        guard let signUpPasswordVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpPasswordViewController") as? SignUpPasswordViewController else { return }
+        signUpPasswordVC.messageName = nameTextField.text
+        self.navigationController?.pushViewController(signUpPasswordVC, animated: true)
     }
     
-    @IBAction func editPassewordTF(_ sender: Any) {
+    @IBAction func editNameTF(_ sender: Any) {
         checkTextField()
     }
     
-    private func setPasswordMessage() {
-        passwordMessage.text = "비밀번호를 저장할 수 있으므로 iCloud® 기기에서 로그인 정보를 입력하지 않아도 됩니다."
-        self.passwordMessage.numberOfLines = 0
-        passwordMessage.sizeToFit()
+    private func setNameMessage() {
+        nameMessage.text = "새 계정에 사용할 사용자 이름을 선택하세요. 나중에 언제든지 변경할 수 있습니다."
+        self.nameMessage.numberOfLines = 0
+        nameMessage.sizeToFit()
     }
     
     private func setupNextBtn() {
@@ -48,8 +46,8 @@ class SignUpPasswordVC: UIViewController {
     
     @objc private func checkTextField() {
     
-        if let passwordTextField = passwordTextField.text {
-            if !passwordTextField.isEmpty {
+        if let nameTextField = nameTextField.text {
+            if !nameTextField.isEmpty {
                 nextButton.isEnabled = true
                 nextButton.backgroundColor = UIColor(displayP3Red: 55/255, green: 151/255, blue: 239/255, alpha: 1)
             }

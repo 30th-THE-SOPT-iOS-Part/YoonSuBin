@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  LoginViewController.swift
 //  Instagram-Clone
 //
 //  Created by subinyoon on 2022/04/07.
@@ -7,7 +7,10 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginViewController:
+    UIViewController {
+
+    // MARK: -
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -29,18 +32,18 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginBtnDidTap(_ sender: Any) {
-        guard let signUpCompleteVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpCompleteVC") as? SignUpCompleteVC else { return }
+        guard let authCompleteVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthCompleteViewController") as? AuthCompleteViewController else { return }
         
-        signUpCompleteVC.modalPresentationStyle = .fullScreen
-        signUpCompleteVC.modalTransitionStyle = .crossDissolve
+        authCompleteVC.modalPresentationStyle = .fullScreen
+        authCompleteVC.modalTransitionStyle = .crossDissolve
         
-        signUpCompleteVC.message = nameTextField.text
+        authCompleteVC.message = nameTextField.text
         
-        self.present(signUpCompleteVC, animated: true, completion: nil)
+        self.present(authCompleteVC, animated: true, completion: nil)
     }
     
     @IBAction func signUpBtnDidTap(_ sender: Any) {
-        guard let signUpNameVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpNameVC") as? SignUpNameVC else { return }
+        guard let signUpNameVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpNameViewController") as? SignUpNameViewController else { return }
         
         self.navigationController?.pushViewController(signUpNameVC, animated: true)
     }

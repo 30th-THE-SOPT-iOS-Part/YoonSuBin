@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LoginVC-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="-126.15384615384615" y="93.838862559241704"/>
         </scene>
-        <!--Sign Up NameVC-->
+        <!--Sign Up Name View Controller-->
         <scene sceneID="Mne-7y-V6a">
             <objects>
-                <viewController storyboardIdentifier="SignUpNameVC" id="leu-G1-bgZ" customClass="SignUpNameVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpNameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="leu-G1-bgZ" customClass="SignUpNameViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ox-RD-WQK" customClass="SignUpVC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,10 +167,10 @@
             </objects>
             <point key="canvasLocation" x="698.46153846153845" y="93.838862559241704"/>
         </scene>
-        <!--Sign Up PasswordVC-->
+        <!--Sign Up Password View Controller-->
         <scene sceneID="cTN-mf-dnA">
             <objects>
-                <viewController storyboardIdentifier="SignUpPasswordVC" id="Ln7-1H-9hn" customClass="SignUpPasswordVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpPasswordViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ln7-1H-9hn" customClass="SignUpPasswordViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qP5-my-wjQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="1510.7692307692307" y="93.838862559241704"/>
         </scene>
-        <!--Sign Up CompleteVC-->
+        <!--Auth Complete View Controller-->
         <scene sceneID="GtI-PN-D4t">
             <objects>
-                <viewController storyboardIdentifier="SignUpCompleteVC" id="rvA-Ad-pTV" customClass="SignUpCompleteVC" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthCompleteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rvA-Ad-pTV" customClass="AuthCompleteViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LlI-b7-hoP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
