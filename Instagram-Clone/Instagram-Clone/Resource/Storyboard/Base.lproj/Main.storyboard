@@ -28,7 +28,6 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="editNameTF:" destination="BYZ-38-t0r" eventType="editingChanged" id="8Db-hg-J06"/>
-                                    <action selector="editNameTF:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ZyQ-c4-eam"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WyO-8j-uTp">
@@ -38,7 +37,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
-                                    <action selector="editPasswordTF:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Ewv-J0-DCW"/>
                                     <action selector="editPasswordTF:" destination="BYZ-38-t0r" eventType="editingChanged" id="m3o-mt-Jvh"/>
                                 </connections>
                             </textField>
