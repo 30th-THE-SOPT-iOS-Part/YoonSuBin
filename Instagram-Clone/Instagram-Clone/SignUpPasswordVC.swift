@@ -55,7 +55,7 @@ class SignUpPasswordVC: UIViewController {
             }
             else {
                 nextButton.isEnabled = false
-                nextButton.backgroundColor = UIColor(displayP3Red: 155/255, green: 203/255, blue: 247/255, alpha: 1)
+                nextButton.backgroundColor = UIColor(displayP3Red: 149/255, green: 200/255, blue: 248/255, alpha: 1)
             }
         }
     }

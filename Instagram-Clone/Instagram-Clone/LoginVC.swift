@@ -68,7 +68,7 @@ class LoginVC: UIViewController {
             
         } else {
             loginButton.isEnabled = false
-            loginButton.backgroundColor = UIColor(displayP3Red: 155/255, green: 203/255, blue: 247/255, alpha: 1)
+            loginButton.backgroundColor = UIColor(displayP3Red: 149/255, green: 200/255, blue: 248/255, alpha: 1)
         }
     }
     
