@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Instagram%20Black%20Logo" translatesAutoresizingMaskIntoConstraints="NO" id="eBZ-g2-X2L">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Instagram Black Logo" translatesAutoresizingMaskIntoConstraints="NO" id="eBZ-g2-X2L">
                                 <rect key="frame" x="91" y="162" width="192" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -83,8 +83,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemGray6Color"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="" image="password%20hidden%20eye%20icon"/>
-                                <state key="selected" image="password%20shown%20eye%20icon"/>
+                                <state key="normal" title="" image="icn_password_hidden"/>
+                                <state key="selected" image="icn_password_shown"/>
                                 <connections>
                                     <action selector="showPasswordBtnDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pEy-ld-E2v"/>
                                 </connections>
@@ -290,9 +290,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Instagram%20Black%20Logo" width="175" height="50"/>
-        <image name="password%20hidden%20eye%20icon" width="20" height="20"/>
-        <image name="password%20shown%20eye%20icon" width="20" height="20"/>
+        <image name="Instagram Black Logo" width="175" height="50"/>
+        <image name="icn_password_hidden" width="20" height="20"/>
+        <image name="icn_password_shown" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
