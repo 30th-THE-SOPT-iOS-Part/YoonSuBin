@@ -13,11 +13,11 @@ class AuthCompleteViewController:
     // MARK: -
     @IBOutlet weak var welcomeMessage: UILabel!
     
-    var message: String?
-    
+    // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         setName()
+        setUserName()
     }
     
     @IBAction func completeBtnDidTap(_ sender: Any) {
@@ -29,6 +29,12 @@ class AuthCompleteViewController:
             welcomeMessage.text = "\(message)님, Instagram에 오신 것을 환영합니다"
             self.welcomeMessage.numberOfLines = 0
             welcomeMessage.sizeToFit()
+    
+    // MARK: - Custom Method Part
+    private func setUserName() {
+        if let userName = userName {
+            welcomeMessage.text = "\(userName)님, Instagram에 오신 것을 환영합니다"
+            self.welcomeMessage.numberOfLines = 2
         }
     }
 }

@@ -11,7 +11,7 @@ class SignUpPasswordViewController:
     UIViewController {
     
     // MARK: -
-    var messageName : String?
+    var userName : String?
 
     @IBOutlet weak var passwordMessage: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -27,7 +27,9 @@ class SignUpPasswordViewController:
     
     @IBAction func nextBtnDidTap(_ sender: Any) {
         guard let authCompleteVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthCompleteViewController") as? AuthCompleteViewController else { return }
-        authCompleteVC.message = messageName
+        
+        authCompleteVC.userName = userName
+        
         self.present(authCompleteVC, animated: true) {
             self.navigationController?.popToRootViewController(animated: false)
         }

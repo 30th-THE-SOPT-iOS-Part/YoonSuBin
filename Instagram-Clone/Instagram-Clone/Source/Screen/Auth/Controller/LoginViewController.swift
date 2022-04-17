@@ -34,6 +34,8 @@ class LoginViewController:
     @IBAction func loginBtnDidTap(_ sender: Any) {
         guard let authCompleteVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthCompleteViewController") as? AuthCompleteViewController else { return }
         
+        authCompleteVC.userName = nameTextField.text
+
         authCompleteVC.modalPresentationStyle = .fullScreen
         authCompleteVC.modalTransitionStyle = .crossDissolve
         
