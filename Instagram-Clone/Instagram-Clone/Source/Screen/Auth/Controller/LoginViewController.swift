@@ -19,6 +19,11 @@ class LoginViewController:
     @IBOutlet weak var signUpButton: UIButton!
     
     // MARK: - Life Cycle Part
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        deleteAccount()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
@@ -39,8 +44,6 @@ class LoginViewController:
 
         authCompleteVC.modalPresentationStyle = .fullScreen
         self.present(authCompleteVC, animated: true, completion: nil)
-        
-        deleteAccount()
     }
     
     @IBAction func signUpBtnDidTap(_ sender: Any) {
@@ -48,8 +51,6 @@ class LoginViewController:
         guard let signUpNameVC = UIStoryboard(name: "SignUp", bundle: nil).instantiateViewController(withIdentifier: "SignUpNameViewController") as? SignUpNameViewController else { return }
         
         self.navigationController?.pushViewController(signUpNameVC, animated: true)
-        
-        deleteAccount()
     }
     
     @IBAction func editNameTF(_ sender: Any) {
