@@ -15,6 +15,7 @@ class SignUpPasswordViewController:
 
     @IBOutlet weak var passwordMessage: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var showPasswordButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
@@ -39,8 +40,8 @@ class SignUpPasswordViewController:
     }
     
     private func setPasswordMessage() {
-        passwordMessage.text = "비밀번호를 저장할 수 있으므로 iCloud® 기기에서 로그인 정보를 입력하지 않아도 됩니다."
-        self.passwordMessage.numberOfLines = 0
+        sender.isSelected.toggle()
+        passwordTextField.isSecureTextEntry = !sender.isSelected
         passwordMessage.sizeToFit()
     }
     
