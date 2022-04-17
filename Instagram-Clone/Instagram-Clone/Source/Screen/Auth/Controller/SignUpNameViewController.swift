@@ -49,11 +49,11 @@ class SignUpNameViewController:
         if let nameTextField = nameTextField.text {
             if !nameTextField.isEmpty {
                 nextButton.isEnabled = true
-                nextButton.backgroundColor = UIColor(displayP3Red: 55/255, green: 151/255, blue: 239/255, alpha: 1)
+            nextButton.backgroundColor = UIColor(named: "sky_blue")
             }
             else {
                 nextButton.isEnabled = false
-                nextButton.backgroundColor = UIColor(displayP3Red: 149/255, green: 200/255, blue: 248/255, alpha: 1)
+            nextButton.backgroundColor = UIColor(named: "light_blue")
             }
         }
     }

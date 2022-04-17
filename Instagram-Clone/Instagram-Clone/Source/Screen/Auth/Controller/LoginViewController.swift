@@ -67,11 +67,11 @@ class LoginViewController:
         
         if (nameTextField.hasText && passwordTextField.hasText) {
             loginButton.isEnabled = true
-            loginButton.backgroundColor = UIColor(displayP3Red: 55/255, green: 151/255, blue: 239/255, alpha: 1)
+            loginButton.backgroundColor = UIColor(named: "sky_blue")
             
         } else {
             loginButton.isEnabled = false
-            loginButton.backgroundColor = UIColor(displayP3Red: 149/255, green: 200/255, blue: 248/255, alpha: 1)
+            loginButton.backgroundColor = UIColor(named: "light_blue")
         }
     }
     
