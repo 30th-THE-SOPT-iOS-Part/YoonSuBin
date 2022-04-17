@@ -45,16 +45,16 @@ class SignUpNameViewController:
         nextButton.setTitleColor(.white, for: .disabled)
     }
     
-    @objc private func checkTextField() {
+    // MARK: - Custom Method Part
+    private func checkTextField() {
     
-        if let nameTextField = nameTextField.text {
-            if !nameTextField.isEmpty {
-                nextButton.isEnabled = true
+        if nameTextField.hasText {
+            nextButton.isEnabled = true
             nextButton.backgroundColor = UIColor(named: "sky_blue")
-            }
-            else {
-                nextButton.isEnabled = false
+        }
+        else {
+            nextButton.isEnabled = false
             nextButton.backgroundColor = UIColor(named: "light_blue")
-            }
+        }
     }
 }

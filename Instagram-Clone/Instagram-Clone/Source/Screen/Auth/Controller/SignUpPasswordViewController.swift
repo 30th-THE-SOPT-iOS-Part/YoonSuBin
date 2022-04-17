@@ -50,16 +50,16 @@ class SignUpPasswordViewController:
         nextButton.setTitleColor(.white, for: .disabled)
     }
     
-    @objc private func checkTextField() {
-    
-        if let passwordTextField = passwordTextField.text {
-            if !passwordTextField.isEmpty {
-                nextButton.isEnabled = true
+    // MARK: - Custom Method Part
+    private func checkTextField() {
+        
+        if passwordTextField.hasText {
+            nextButton.isEnabled = true
             nextButton.backgroundColor = UIColor(named: "sky_blue")
-            }
-            else {
-                nextButton.isEnabled = false
+        }
+        else {
+            nextButton.isEnabled = false
             nextButton.backgroundColor = UIColor(named: "light_blue")
-            }
+        }
     }
 }
