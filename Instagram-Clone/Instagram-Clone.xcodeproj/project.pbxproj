@@ -27,6 +27,7 @@
 		8E99B8C8280847F200D2AF4B /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8C7280847F200D2AF4B /* UITextField+.swift */; };
 		8E99B8CC2808496E00D2AF4B /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8CB2808496E00D2AF4B /* UIColor+.swift */; };
 		8E99B8CE28084AFC00D2AF4B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E99B8CD28084AFB00D2AF4B /* Colors.xcassets */; };
+		8EE7D0E3280C03F6000F27D7 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8E99B8C7280847F200D2AF4B /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		8E99B8CB2808496E00D2AF4B /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		8E99B8CD28084AFB00D2AF4B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				8E99B8B12808435A00D2AF4B /* UIView+.swift */,
 				8E99B8C7280847F200D2AF4B /* UITextField+.swift */,
 				8E99B8CB2808496E00D2AF4B /* UIColor+.swift */,
+				8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				8E99B8B22808435A00D2AF4B /* UIView+.swift in Sources */,
 				8E37313E27FED34F00942C46 /* AppDelegate.swift in Sources */,
 				8E37315C27FEE01A00942C46 /* AuthCompleteViewController.swift in Sources */,
+				8EE7D0E3280C03F6000F27D7 /* UIViewController+.swift in Sources */,
 				8E99B8C42808470D00D2AF4B /* AuthCompleteView.swift in Sources */,
 				8E99B8C8280847F200D2AF4B /* UITextField+.swift in Sources */,
 				8E99B8B82808448D00D2AF4B /* HomeViewController.swift in Sources */,

@@ -23,7 +23,6 @@ class LoginViewController:
         super.viewDidLoad()
         setupLoginBtn()
         checkTextField()
-        setBackBtn()
     }
     
     @IBAction func showPasswordBtnDidTap(_ sender: UIButton) {
@@ -75,10 +74,5 @@ class LoginViewController:
             loginButton.isEnabled = false
             loginButton.backgroundColor = UIColor(named: "light_blue")
         }
-    }
-    
-    func setBackBtn() {
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        navigationItem.backBarButtonItem?.tintColor = .gray
     }
 }

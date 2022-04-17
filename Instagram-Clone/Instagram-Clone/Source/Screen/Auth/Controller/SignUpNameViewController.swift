@@ -20,7 +20,6 @@ class SignUpNameViewController:
         setNameMessage()
         setupNextBtn()
         checkTextField()
-        setBackBtn()
     }
     
     @IBAction func nextBtnDidTap(_ sender: Any) {
@@ -57,11 +56,5 @@ class SignUpNameViewController:
                 nextButton.isEnabled = false
             nextButton.backgroundColor = UIColor(named: "light_blue")
             }
-        }
-    }
-    
-    private func setBackBtn() {
-        navigationItem.backBarButtonItem = UIBarButtonItem( title: "", style: .plain, target: nil, action: nil)
-        navigationItem.backBarButtonItem?.tintColor = .gray
     }
 }
