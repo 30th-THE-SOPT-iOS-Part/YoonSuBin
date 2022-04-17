@@ -16,6 +16,7 @@ class AuthCompleteViewController:
     // MARK: - UI Component Part
     @IBOutlet weak var welcomeMessage: UILabel!
     @IBOutlet weak var completeButton: UIButton!
+    @IBOutlet weak var addAccountButton: UIButton!
     
     // MARK: - Life Cycle Part
     override func viewDidLoad() {
@@ -26,6 +27,15 @@ class AuthCompleteViewController:
     
     // MARK: - IBAction Part
     @IBAction func completeBtnDidTap(_ sender: Any) {
+        /// present
+        guard let tapBarMainVC = UIStoryboard(name: "TabBarMain", bundle: nil).instantiateViewController(withIdentifier: "TabBarMainViewController") as? TabBarMainViewController else { return }
+        
+        tapBarMainVC.modalPresentationStyle = .fullScreen
+        self.present(tapBarMainVC, animated: true, completion: nil)
+
+    }
+    
+    @IBAction func addAccountBtnDidTap(_ sender: Any) {
         /// dismiss
         self.dismiss(animated: true, completion: nil)
     }

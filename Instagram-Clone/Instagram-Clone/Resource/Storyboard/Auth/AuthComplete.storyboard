@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="AuthCompleteViewController" id="zZD-7f-bJ4" customClass="AuthCompleteViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dOS-0I-Ecd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPj-1u-Bue">
-                                <rect key="frame" x="38" y="394" width="338" height="45"/>
+                                <rect key="frame" x="38" y="383.66666666666669" width="299" height="40"/>
                                 <color key="backgroundColor" red="0.2156862745" green="0.59215686270000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MPj-1u-Bue" secondAttribute="height" multiplier="300:40" id="W7X-nu-dVQ"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n0u-ik-FsR">
-                                <rect key="frame" x="54" y="350" width="306" height="14"/>
+                                <rect key="frame" x="34.666666666666657" y="339.66666666666669" width="306" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="306" id="Z0g-gH-nNu"/>
                                     <constraint firstAttribute="height" constant="14" id="fsJ-P8-aGf"/>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OOO님, Instagram에" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qmh-aO-zgl">
-                                <rect key="frame" x="75" y="266" width="264" height="68"/>
+                                <rect key="frame" x="75" y="266" width="225" height="57.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qmh-aO-zgl" secondAttribute="height" multiplier="226:58" id="CWQ-jX-se3"/>
                                 </constraints>
@@ -51,12 +51,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다른 계정으로 로그인하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmh-8Y-5jC">
-                                <rect key="frame" x="136.5" y="457" width="141" height="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZg-u1-kKV">
+                                <rect key="frame" x="113.66666666666669" y="441.66666666666669" width="148" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="Bz1-p4-20q"/>
+                                    <constraint firstAttribute="width" constant="148" id="Fql-7p-0e4"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.2156862745" green="0.59215686270000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="tintColor" red="0.2156862745" green="0.59215686270000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="다른 계정으로 로그인하기"/>
+                                <connections>
+                                    <action selector="addAccountBtnDidTap:" destination="zZD-7f-bJ4" eventType="touchUpInside" id="LPR-is-oPC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Svo-jG-pnZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,23 +74,24 @@
                             <constraint firstItem="MPj-1u-Bue" firstAttribute="leading" secondItem="Svo-jG-pnZ" secondAttribute="leading" constant="38" id="BsI-1F-oDe"/>
                             <constraint firstItem="qmh-aO-zgl" firstAttribute="leading" secondItem="Svo-jG-pnZ" secondAttribute="leading" constant="75" id="E7v-03-iQ0"/>
                             <constraint firstItem="qmh-aO-zgl" firstAttribute="top" secondItem="Svo-jG-pnZ" secondAttribute="top" constant="222" id="Ege-9C-sYj"/>
-                            <constraint firstItem="fmh-8Y-5jC" firstAttribute="centerX" secondItem="dOS-0I-Ecd" secondAttribute="centerX" id="Hi9-aQ-Pyo"/>
                             <constraint firstItem="Svo-jG-pnZ" firstAttribute="trailing" secondItem="qmh-aO-zgl" secondAttribute="trailing" constant="75" id="Knm-i0-Say"/>
                             <constraint firstItem="MPj-1u-Bue" firstAttribute="top" secondItem="n0u-ik-FsR" secondAttribute="bottom" constant="30" id="Lrm-6R-J5W"/>
-                            <constraint firstItem="fmh-8Y-5jC" firstAttribute="top" secondItem="MPj-1u-Bue" secondAttribute="bottom" constant="18" id="QNX-nT-iqH"/>
+                            <constraint firstItem="QZg-u1-kKV" firstAttribute="top" secondItem="MPj-1u-Bue" secondAttribute="bottom" constant="18" id="Rth-pf-ki6"/>
                             <constraint firstItem="n0u-ik-FsR" firstAttribute="top" secondItem="qmh-aO-zgl" secondAttribute="bottom" constant="16" id="WWT-9r-U5b"/>
+                            <constraint firstItem="QZg-u1-kKV" firstAttribute="centerX" secondItem="dOS-0I-Ecd" secondAttribute="centerX" id="bVG-aJ-XoW"/>
                             <constraint firstItem="qmh-aO-zgl" firstAttribute="centerX" secondItem="dOS-0I-Ecd" secondAttribute="centerX" id="g4H-3j-pjO"/>
                             <constraint firstItem="n0u-ik-FsR" firstAttribute="centerX" secondItem="dOS-0I-Ecd" secondAttribute="centerX" id="sZJ-8x-CbU"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addAccountButton" destination="QZg-u1-kKV" id="yBG-5p-Nhe"/>
                         <outlet property="completeButton" destination="MPj-1u-Bue" id="dln-0m-afL"/>
                         <outlet property="welcomeMessage" destination="qmh-aO-zgl" id="Asl-yG-V5G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHQ-5t-M7G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2295.3846153846152" y="93.838862559241704"/>
+            <point key="canvasLocation" x="2294.202898550725" y="93.75"/>
         </scene>
     </scenes>
     <resources>
