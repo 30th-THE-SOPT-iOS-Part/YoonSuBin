@@ -39,6 +39,8 @@ class LoginViewController:
 
         authCompleteVC.modalPresentationStyle = .fullScreen
         self.present(authCompleteVC, animated: true, completion: nil)
+        
+        deleteAccount()
     }
     
     @IBAction func signUpBtnDidTap(_ sender: Any) {
@@ -46,6 +48,8 @@ class LoginViewController:
         guard let signUpNameVC = UIStoryboard(name: "SignUp", bundle: nil).instantiateViewController(withIdentifier: "SignUpNameViewController") as? SignUpNameViewController else { return }
         
         self.navigationController?.pushViewController(signUpNameVC, animated: true)
+        
+        deleteAccount()
     }
     
     @IBAction func editNameTF(_ sender: Any) {
@@ -81,5 +85,13 @@ class LoginViewController:
             loginButton.isEnabled = false
             loginButton.backgroundColor = UIColor(named: "light_blue")
         }
+    }
+    
+    private func deleteAccount() {
+        nameTextField.attributedText = .none
+        passwordTextField.attributedText = .none
+        
+        loginButton.isEnabled = false
+        loginButton.backgroundColor = UIColor(named: "light_blue")
     }
 }
