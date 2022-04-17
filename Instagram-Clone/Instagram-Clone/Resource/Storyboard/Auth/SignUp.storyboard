@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="SignUpNameViewController" id="rqc-Ve-Cr1" customClass="SignUpNameViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SFx-B8-ZyJ" customClass="SignUpVC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nM7-6t-auN">
-                                <rect key="frame" x="16" y="132" width="382" height="49"/>
+                                <rect key="frame" x="16" y="126" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nM7-6t-auN" secondAttribute="height" multiplier="343:44" id="UWq-6O-ZeE"/>
@@ -30,7 +30,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2M-86-E0M">
-                                <rect key="frame" x="16" y="203" width="382" height="49"/>
+                                <rect key="frame" x="16" y="192" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.2156862745" green="0.59215686270000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="G2M-86-E0M" secondAttribute="height" multiplier="343:44" id="C8i-SB-4wf"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CG1-gy-cUd">
-                                <rect key="frame" x="76" y="101" width="262" height="15"/>
+                                <rect key="frame" x="56.666666666666657" y="95" width="262" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="09l-qW-nUR"/>
                                 </constraints>
@@ -55,7 +55,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사용자 이름 만들기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ryD-sa-wKL">
-                                <rect key="frame" x="92" y="50" width="230" height="35"/>
+                                <rect key="frame" x="92" y="50" width="191" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ryD-sa-wKL" secondAttribute="height" multiplier="191:29" id="bh6-aQ-Zsv"/>
                                 </constraints>
@@ -98,11 +98,11 @@
             <objects>
                 <viewController storyboardIdentifier="SignUpPasswordViewController" id="CWE-yN-p3t" customClass="SignUpPasswordViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s8E-9M-aU0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 만들기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xWy-IC-kbS">
-                                <rect key="frame" x="106" y="50" width="202" height="36"/>
+                                <rect key="frame" x="106" y="50" width="163" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="xWy-IC-kbS" secondAttribute="height" multiplier="163:29" id="8Y1-hT-4u5"/>
                                 </constraints>
@@ -111,7 +111,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DHO-yq-2LR">
-                                <rect key="frame" x="61" y="102" width="292" height="15"/>
+                                <rect key="frame" x="41.666666666666657" y="95" width="292" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="292" id="dkN-Gr-oc4"/>
                                 </constraints>
@@ -120,7 +120,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBz-5r-eii">
-                                <rect key="frame" x="16" y="210" width="382" height="49"/>
+                                <rect key="frame" x="16" y="198" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.2156862745" green="0.59215686270000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BBz-5r-eii" secondAttribute="height" multiplier="343:44" id="DGE-4t-Gck"/>
@@ -136,7 +136,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EHK-x6-2BK">
-                                <rect key="frame" x="16" y="139" width="382" height="49"/>
+                                <rect key="frame" x="16" y="132" width="343" height="44"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="EHK-x6-2BK" secondAttribute="height" multiplier="343:44" id="uMc-km-Jf2"/>
@@ -149,7 +149,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLH-uv-Hve">
-                                <rect key="frame" x="366" y="153.5" width="20" height="20"/>
+                                <rect key="frame" x="327" y="144" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="7pa-w7-oiB"/>
                                     <constraint firstAttribute="width" constant="20" id="Kbz-kg-Z5J"/>
