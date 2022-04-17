@@ -17,7 +17,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" selectedImage="icn_reels_selected" id="3Ch-OT-DRh"/>
+                    <tabBarItem key="tabBarItem" title="" image="icn_reels" selectedImage="icn_reels_selected" id="3Ch-OT-DRh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -26,6 +26,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icn_reels" width="24" height="24"/>
         <image name="icn_reels_selected" width="26" height="26"/>
     </resources>
 </document>

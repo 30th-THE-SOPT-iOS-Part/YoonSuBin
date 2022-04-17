@@ -16,11 +16,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="rfz-dq-Hgd" kind="relationship" relationship="viewControllers" id="bky-ra-3Vp"/>
-                        <segue destination="bqp-lO-K5R" kind="relationship" relationship="viewControllers" id="obo-4t-MTq"/>
-                        <segue destination="Urz-EW-05C" kind="relationship" relationship="viewControllers" id="KEs-2E-ovj"/>
-                        <segue destination="KOP-kw-skz" kind="relationship" relationship="viewControllers" id="vcP-8u-NhU"/>
-                        <segue destination="qEs-EZ-UNU" kind="relationship" relationship="viewControllers" id="1oQ-JQ-5Qq"/>
+                        <segue destination="Urz-EW-05C" kind="relationship" relationship="viewControllers" id="zHG-LZ-Jms"/>
+                        <segue destination="bqp-lO-K5R" kind="relationship" relationship="viewControllers" id="9b8-0y-j1f"/>
+                        <segue destination="rfz-dq-Hgd" kind="relationship" relationship="viewControllers" id="5gq-Ok-dGw"/>
+                        <segue destination="KOP-kw-skz" kind="relationship" relationship="viewControllers" id="NJR-jV-8vw"/>
+                        <segue destination="qEs-EZ-UNU" kind="relationship" relationship="viewControllers" id="BF9-S0-ndd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hU-74-4XI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
