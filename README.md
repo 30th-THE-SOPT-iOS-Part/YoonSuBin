@@ -11,7 +11,7 @@
 | 주차 | 내용 | 세미나 | 과제 |
 |:----:|:-----:|:----:|:----:|
 | `1주차` | Xcode 기본 사용법, Layout 기초, View 화면 전환 | ☑️ | ☑️ |
-| `2주차` | AutoLayout, StackView, TabBarController | ☑️ | |
+| `2주차` | AutoLayout, StackView, TabBarController | ☑️ | ☑️ |
 | `3주차` | ScrollView, TableView, CollectionView |  |  |
 | `4주차` | 서버와 클라이언트 이해, RESTful API, Alamofire를 활용한 실습 |  |  |
 | `5주차` | 디자인 합동 세미나 |  |  |
