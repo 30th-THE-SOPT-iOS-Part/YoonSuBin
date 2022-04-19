@@ -23,12 +23,8 @@ class TabBarMainViewController:
       self.delegate = self
     }
     
-    private func tabBarColor() {
-      self.tabBar.unselectedItemTintColor = .black
-    }
-    
     private func setTabBarVC() {
-        guard let reelsVC = UIStoryboard(name: "Reels", bundle: nil).instantiateViewController(withIdentifier: "ReelsViewController") as? ReelsViewController else {return}
+        guard let reelsVC = UIStoryboard(name: "Reels", bundle: nil).instantiateViewController(withIdentifier: "ReelsViewController") as? ReelsViewController else { return }
         tabBarController(self, didSelect: reelsVC)
     }
     
