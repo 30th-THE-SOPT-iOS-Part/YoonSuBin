@@ -8,14 +8,13 @@
 import UIKit
 
 class TabBarMainViewController:
-    UITabBarController,
-    UITabBarControllerDelegate {
+    UITabBarController {
 
     // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         setDelegate()
-        setTabBarVC()
+        setTabBarColor()
     }
 
     // MARK: - Custom Method Part
@@ -23,12 +22,14 @@ class TabBarMainViewController:
       self.delegate = self
     }
     
-    private func setTabBarVC() {
-        guard let reelsVC = UIStoryboard(name: "Reels", bundle: nil).instantiateViewController(withIdentifier: "ReelsViewController") as? ReelsViewController else { return }
-        tabBarController(self, didSelect: reelsVC)
+    private func setTabBarColor() {
+      tabBar.unselectedItemTintColor = .black
     }
-    
-    public func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        tabBarReverseCustom()
+}
+
+// MARK: - Extension Part
+extension TabBarMainViewController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        tabBarReverseCustom(wantToChangeIndex: 2)
     }
 }
