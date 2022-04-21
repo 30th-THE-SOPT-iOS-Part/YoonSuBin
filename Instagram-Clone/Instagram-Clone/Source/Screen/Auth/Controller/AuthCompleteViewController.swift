@@ -27,12 +27,10 @@ class AuthCompleteViewController:
     
     // MARK: - IBAction Part
     @IBAction func completeBtnDidTap(_ sender: Any) {
-        /// present
-        guard let tapBarMainVC = UIStoryboard(name: "TabBarMain", bundle: nil).instantiateViewController(withIdentifier: "TabBarMainViewController") as? TabBarMainViewController else { return }
-        
-        tapBarMainVC.modalPresentationStyle = .fullScreen
-        self.present(tapBarMainVC, animated: true, completion: nil)
-
+        /// rootViewController를 TabBarMainViewController로 변경합니다,
+        guard let rootVC = UIStoryboard(name: "TabBarMain", bundle: nil).instantiateViewController(withIdentifier: "TabBarMainViewController") as? TabBarMainViewController else { return }
+        self.view.window?.rootViewController = rootVC
+        self.view.window?.makeKeyAndVisible()
     }
     
     @IBAction func addAccountBtnDidTap(_ sender: Any) {
