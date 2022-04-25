@@ -12,12 +12,10 @@ extension UITabBarController {
     func tabBarReverseCustom(wantToChangeIndex: Int) {
         if selectedIndex == 2 {
             tabBar.backgroundColor = .black
-            tabBar.barTintColor = .white
             tabBar.tintColor = .white
             tabBar.unselectedItemTintColor = .white
         } else {
             tabBar.backgroundColor = .white
-            tabBar.barTintColor = .black
             tabBar.tintColor = .black
             tabBar.unselectedItemTintColor = .black
         }
