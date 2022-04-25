@@ -8,11 +8,11 @@
 import UIKit
 
 extension UIColor {
-    /// Main ColorSet
+    /// ColorSet
     /// light blue color - (149, 200, 248, 100%)
-    class var light_blue: UIColor? { return UIColor(named: "light_blue") }
+    class var lightBlue: UIColor? { return UIColor(named: "lightBlue") }
     /// sky blue color- (55, 151, 239, 100%)
-    class var sky_blue: UIColor? { return UIColor(named: "sky_blue") }
+    class var skyBlue: UIColor? { return UIColor(named: "skyBlue") }
     /// dark grey color- (114, 114, 114, 100%)
-    class var dark_grey: UIColor? { return UIColor(named: "dark_grey") }
+    class var darkGrey: UIColor? { return UIColor(named: "darkGrey") }
 }

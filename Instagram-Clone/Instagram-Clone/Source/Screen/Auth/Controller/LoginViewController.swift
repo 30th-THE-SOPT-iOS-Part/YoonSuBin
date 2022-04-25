@@ -71,8 +71,8 @@ class LoginViewController:
         
         /// TextField
         nameTextField.clearButtonMode = .whileEditing
-        nameTextField.attributedPlaceholder = NSAttributedString(string: "전화번호, 사용자 이름 또는 이메일", attributes: [NSAttributedString.Key.foregroundColor : UIColor(named: "dark_grey")!])
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "비밀번호", attributes: [NSAttributedString.Key.foregroundColor : UIColor(named: "dark_grey")!])
+        nameTextField.attributedPlaceholder = NSAttributedString(string: "전화번호, 사용자 이름 또는 이메일", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGrey as Any])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "비밀번호", attributes: [NSAttributedString.Key.foregroundColor : UIColor.darkGrey as Any])
     }
     
     // MARK: - Custom Method Part
@@ -80,11 +80,11 @@ class LoginViewController:
         
         if (nameTextField.hasText && passwordTextField.hasText) {
             loginButton.isEnabled = true
-            loginButton.backgroundColor = UIColor(named: "sky_blue")
+            loginButton.backgroundColor = UIColor.skyBlue
             
         } else {
             loginButton.isEnabled = false
-            loginButton.backgroundColor = UIColor(named: "light_blue")
+            loginButton.backgroundColor = UIColor.lightBlue
         }
     }
     
@@ -93,6 +93,6 @@ class LoginViewController:
         passwordTextField.attributedText = .none
         
         loginButton.isEnabled = false
-        loginButton.backgroundColor = UIColor(named: "light_blue")
+        loginButton.backgroundColor = UIColor.lightBlue
     }
 }

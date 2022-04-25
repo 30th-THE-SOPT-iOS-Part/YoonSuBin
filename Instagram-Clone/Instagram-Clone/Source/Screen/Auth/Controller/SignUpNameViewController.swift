@@ -45,7 +45,7 @@ class SignUpNameViewController:
         backButtonCustom()
         
         /// TextField
-        nameTextField.attributedPlaceholder = NSAttributedString(string: "사용자 이름", attributes: [NSAttributedString.Key.foregroundColor : UIColor(named: "dark_grey")!])
+        nameTextField.attributedPlaceholder = NSAttributedString(string: "사용자 이름", attributes: [NSAttributedString.Key.foregroundColor : UIColor.darkGrey as Any])
         
         /// Label
         nameMessageLabel.text = "새 계정에 사용할 사용자 이름을 선택하세요. 나중에 언제든지 변경할 수 있습니다."
@@ -57,11 +57,11 @@ class SignUpNameViewController:
     
         if nameTextField.hasText {
             nextButton.isEnabled = true
-            nextButton.backgroundColor = UIColor(named: "sky_blue")
+            nextButton.backgroundColor = UIColor.skyBlue
         }
         else {
             nextButton.isEnabled = false
-            nextButton.backgroundColor = UIColor(named: "light_blue")
+            nextButton.backgroundColor = UIColor.lightBlue
         }
     }
 }

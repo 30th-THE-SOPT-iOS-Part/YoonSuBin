@@ -56,7 +56,7 @@ class SignUpPasswordViewController:
         nextButton.setTitleColor(.white, for: .disabled)
         
         /// TextField
-        passwordTextField.attributedPlaceholder  = NSAttributedString(string: "비밀번호", attributes: [NSAttributedString.Key.foregroundColor : UIColor(named: "dark_grey")!])
+        passwordTextField.attributedPlaceholder  = NSAttributedString(string: "비밀번호", attributes: [NSAttributedString.Key.foregroundColor : UIColor.darkGrey as Any])
         
         /// Label
         passwordMessageLabel.text = "비밀번호를 저장할 수 있으므로 iCloud® 기기에서 로그인 정보를 입력하지 않아도 됩니다."
@@ -68,11 +68,11 @@ class SignUpPasswordViewController:
         
         if passwordTextField.hasText {
             nextButton.isEnabled = true
-            nextButton.backgroundColor = UIColor(named: "sky_blue")
+            nextButton.backgroundColor = UIColor.skyBlue
         }
         else {
             nextButton.isEnabled = false
-            nextButton.backgroundColor = UIColor(named: "light_blue")
+            nextButton.backgroundColor = UIColor.lightBlue
         }
     }
 }
