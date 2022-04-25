@@ -21,13 +21,12 @@ class LoginViewController:
     // MARK: - Life Cycle Part
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        deleteAccount()
+        checkAccount()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
-        checkTextField()
     }
     
     // MARK: - IBAction Part
@@ -56,7 +55,7 @@ class LoginViewController:
     @IBAction func editNameTF(_ sender: Any) {
         checkTextField()
     }
-    
+
     @IBAction func editPasswordTF(_ sender: Any) {
         checkTextField()
     }
@@ -82,7 +81,8 @@ class LoginViewController:
         loginButton.backgroundColor = (nameTextField.hasText) && (passwordTextField.hasText) ? UIColor.skyBlue : UIColor.lightBlue
     }
     
-    private func deleteAccount() {
+    private func checkAccount() {
+        /// Account 작성 상태를 초기화하고 체크하는 함수입니다.
         nameTextField.attributedText = .none
         passwordTextField.attributedText = .none
         
