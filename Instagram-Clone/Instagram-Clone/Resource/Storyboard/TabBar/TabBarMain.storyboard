@@ -10,7 +10,7 @@
         <scene sceneID="Znh-kY-Msf">
             <objects>
                 <tabBarController storyboardIdentifier="TabBarMainViewController" id="yPa-tg-HOV" customClass="TabBarMainViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yea-Gu-UyO">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="yea-Gu-UyO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
