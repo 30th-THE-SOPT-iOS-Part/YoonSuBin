@@ -8,11 +8,11 @@
 import UIKit
 
 extension UIColor {
-    /// Primary ColorSet
-    ///
-    /// Primary color - (149, 200, 248, 100%)
-    class var primary: UIColor? { return UIColor(named: "primary") }
-    /// Secondary color - (55, 151, 239, 100%)
-    class var secondary: UIColor? { return UIColor(named: "secondary") }
-    
+    /// ColorSet
+    /// light blue color - (149, 200, 248, 100%)
+    class var lightBlue: UIColor? { return UIColor(named: "lightBlue") }
+    /// sky blue color- (55, 151, 239, 100%)
+    class var skyBlue: UIColor? { return UIColor(named: "skyBlue") }
+    /// dark grey color- (114, 114, 114, 100%)
+    class var darkGrey: UIColor? { return UIColor(named: "darkGrey") }
 }
