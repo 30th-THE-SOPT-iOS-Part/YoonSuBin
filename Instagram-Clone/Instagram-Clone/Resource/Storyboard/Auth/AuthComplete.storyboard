@@ -86,7 +86,7 @@
                     <connections>
                         <outlet property="addAccountButton" destination="QZg-u1-kKV" id="yBG-5p-Nhe"/>
                         <outlet property="completeButton" destination="MPj-1u-Bue" id="dln-0m-afL"/>
-                        <outlet property="welcomeMessage" destination="qmh-aO-zgl" id="Asl-yG-V5G"/>
+                        <outlet property="welcomeMessageLabel" destination="qmh-aO-zgl" id="EOG-RE-63g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHQ-5t-M7G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

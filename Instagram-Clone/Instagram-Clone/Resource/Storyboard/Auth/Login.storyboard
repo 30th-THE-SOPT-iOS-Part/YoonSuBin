@@ -85,7 +85,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="signUpBtnDidTap:" destination="ZrA-DD-t6g" eventType="touchUpInside" id="lcs-qJ-cVf"/>
+                                            <action selector="signUpBtnDidTap:" destination="ZrA-DD-t6g" eventType="touchUpInside" id="re5-Nz-7Iu"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -162,7 +162,7 @@
                         <outlet property="nameTextField" destination="8W6-ap-B5s" id="7Ke-Ie-Pge"/>
                         <outlet property="passwordTextField" destination="G8t-Ff-qU9" id="o2w-OX-SuH"/>
                         <outlet property="showPasswordButton" destination="IDG-QX-kc3" id="MVj-2V-tWW"/>
-                        <outlet property="signUpButton" destination="zl8-aP-lP2" id="Tbl-tZ-xyf"/>
+                        <outlet property="signUpButton" destination="zl8-aP-lP2" id="Y5p-op-akd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mx0-Ec-UCc" sceneMemberID="firstResponder"/>

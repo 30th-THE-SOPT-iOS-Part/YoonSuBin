@@ -84,7 +84,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameMessage" destination="CG1-gy-cUd" id="9Ff-cK-xPK"/>
+                        <outlet property="nameMessageLabel" destination="CG1-gy-cUd" id="yUT-8B-WO0"/>
                         <outlet property="nameTextField" destination="nM7-6t-auN" id="Eut-lN-kr5"/>
                         <outlet property="nextButton" destination="G2M-86-E0M" id="XBc-Rz-0wY"/>
                     </connections>
@@ -185,7 +185,7 @@
                     </view>
                     <connections>
                         <outlet property="nextButton" destination="BBz-5r-eii" id="k6Q-sQ-YwX"/>
-                        <outlet property="passwordMessage" destination="DHO-yq-2LR" id="sEG-np-ALt"/>
+                        <outlet property="passwordMessageLabel" destination="DHO-yq-2LR" id="Riu-6y-Yem"/>
                         <outlet property="passwordTextField" destination="EHK-x6-2BK" id="C99-vY-5lc"/>
                         <outlet property="showPasswordButton" destination="sLH-uv-Hve" id="Lqf-1z-PJU"/>
                     </connections>
