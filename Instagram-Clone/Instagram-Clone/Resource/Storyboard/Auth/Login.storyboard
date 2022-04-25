@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -48,6 +49,11 @@
                                 <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" name="darkGrey"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="editNameTF:" destination="ZrA-DD-t6g" eventType="editingChanged" id="9m5-ap-qGF"/>
                                 </connections>
@@ -61,6 +67,11 @@
                                 <color key="textColor" red="0.44705882349999998" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" name="darkGrey"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="editPasswordTF:" destination="ZrA-DD-t6g" eventType="editingChanged" id="SNC-YN-nDq"/>
                                 </connections>
@@ -175,6 +186,9 @@
         <image name="icn_back" width="24" height="24"/>
         <image name="icn_password_hidden" width="20" height="20"/>
         <image name="icn_password_shown" width="20" height="20"/>
+        <namedColor name="darkGrey">
+            <color red="0.44705879688262939" green="0.44705873727798462" blue="0.44705885648727417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

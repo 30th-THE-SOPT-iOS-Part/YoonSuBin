@@ -70,8 +70,6 @@ class LoginViewController:
         
         /// TextField
         nameTextField.clearButtonMode = .whileEditing
-        nameTextField.attributedPlaceholder = NSAttributedString(string: "전화번호, 사용자 이름 또는 이메일", attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGrey as Any])
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "비밀번호", attributes: [NSAttributedString.Key.foregroundColor : UIColor.darkGrey as Any])
     }
     
     // MARK: - Custom Method Part
