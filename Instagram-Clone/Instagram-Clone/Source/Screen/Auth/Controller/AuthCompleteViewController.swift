@@ -14,7 +14,7 @@ class AuthCompleteViewController:
     var userName: String?
     
     // MARK: - UI Component Part
-    @IBOutlet weak var welcomeMessage: UILabel!
+    @IBOutlet weak var welcomeMessageLabel: UILabel!
     @IBOutlet weak var completeButton: UIButton!
     @IBOutlet weak var addAccountButton: UIButton!
     
@@ -47,8 +47,8 @@ class AuthCompleteViewController:
     // MARK: - Custom Method Part
     private func setUserName() {
         if let userName = userName {
-            welcomeMessage.text = "\(userName)님, Instagram에 오신 것을 환영합니다"
-            self.welcomeMessage.numberOfLines = 2
+            welcomeMessageLabel.text = "\(userName)님, Instagram에 오신 것을 환영합니다"
+            self.welcomeMessageLabel.numberOfLines = 2
         }
     }
 }

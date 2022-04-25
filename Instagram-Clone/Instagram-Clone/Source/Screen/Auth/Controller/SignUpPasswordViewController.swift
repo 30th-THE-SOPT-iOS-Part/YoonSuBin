@@ -14,7 +14,7 @@ class SignUpPasswordViewController:
     var userName : String?
     
     // MARK: - UI Component Part
-    @IBOutlet weak var passwordMessage: UILabel!
+    @IBOutlet weak var passwordMessageLabel: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var showPasswordButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
@@ -59,8 +59,8 @@ class SignUpPasswordViewController:
         passwordTextField.attributedPlaceholder  = NSAttributedString(string: "비밀번호", attributes: [NSAttributedString.Key.foregroundColor : UIColor(named: "dark_grey")!])
         
         /// Label
-        passwordMessage.text = "비밀번호를 저장할 수 있으므로 iCloud® 기기에서 로그인 정보를 입력하지 않아도 됩니다."
-        self.passwordMessage.numberOfLines = 2
+        passwordMessageLabel.text = "비밀번호를 저장할 수 있으므로 iCloud® 기기에서 로그인 정보를 입력하지 않아도 됩니다."
+        self.passwordMessageLabel.numberOfLines = 2
     }
     
     // MARK: - Custom Method Part

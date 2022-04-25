@@ -11,7 +11,7 @@ class SignUpNameViewController:
     UIViewController {
     
     // MARK: - UI Component Part
-    @IBOutlet weak var nameMessage: UILabel!
+    @IBOutlet weak var nameMessageLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
@@ -48,8 +48,8 @@ class SignUpNameViewController:
         nameTextField.attributedPlaceholder = NSAttributedString(string: "사용자 이름", attributes: [NSAttributedString.Key.foregroundColor : UIColor(named: "dark_grey")!])
         
         /// Label
-        nameMessage.text = "새 계정에 사용할 사용자 이름을 선택하세요. 나중에 언제든지 변경할 수 있습니다."
-        self.nameMessage.numberOfLines = 2
+        nameMessageLabel.text = "새 계정에 사용할 사용자 이름을 선택하세요. 나중에 언제든지 변경할 수 있습니다."
+        self.nameMessageLabel.numberOfLines = 2
     }
     
     // MARK: - Custom Method Part
