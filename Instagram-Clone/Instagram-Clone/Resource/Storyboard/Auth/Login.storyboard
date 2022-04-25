@@ -12,7 +12,7 @@
         <scene sceneID="f8M-ri-JKX">
             <objects>
                 <navigationController id="78R-ZK-oTh" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="icn_back_24" id="EIH-g0-PIt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" shadowImage="icn_back" backIndicatorImage="icn_back" backIndicatorTransitionMaskImage="icn_back" id="EIH-g0-PIt">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -172,7 +172,7 @@
     </scenes>
     <resources>
         <image name="Instagram Black Logo" width="175" height="50"/>
-        <image name="icn_back_24" width="24" height="24"/>
+        <image name="icn_back" width="24" height="24"/>
         <image name="icn_password_hidden" width="20" height="20"/>
         <image name="icn_password_shown" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
