@@ -10,14 +10,9 @@ import UIKit
 extension UITabBarController {
     /// 릴스 탭 바 클릭 시 아이템 색상과 에셋 색상을 반전시키는 함수입니다
     func tabBarReverseCustom(wantToChangeIndex: Int) {
-        if selectedIndex == 2 {
-            tabBar.backgroundColor = .black
-            tabBar.tintColor = .white
-            tabBar.unselectedItemTintColor = .white
-        } else {
-            tabBar.backgroundColor = .white
-            tabBar.tintColor = .black
-            tabBar.unselectedItemTintColor = .black
-        }
+        let isReelsSelected = (selectedIndex == 2)
+        tabBar.backgroundColor = isReelsSelected ? .black : .white
+        tabBar.tintColor = isReelsSelected ? .white : .black
+        tabBar.unselectedItemTintColor = isReelsSelected ? .white : .black
     }
 }
