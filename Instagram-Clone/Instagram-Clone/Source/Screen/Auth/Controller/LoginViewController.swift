@@ -77,15 +77,9 @@ class LoginViewController:
     
     // MARK: - Custom Method Part
     private func checkTextField() {
-        
-        if (nameTextField.hasText && passwordTextField.hasText) {
-            loginButton.isEnabled = true
-            loginButton.backgroundColor = UIColor.skyBlue
-            
-        } else {
-            loginButton.isEnabled = false
-            loginButton.backgroundColor = UIColor.lightBlue
-        }
+        /// 모든 텍스트 필드가 채워져있는 지 확인하는 함수입니다.
+        loginButton.isEnabled = (nameTextField.hasText) && (passwordTextField.hasText)
+        loginButton.backgroundColor = (nameTextField.hasText) && (passwordTextField.hasText) ? UIColor.skyBlue : UIColor.lightBlue
     }
     
     private func deleteAccount() {

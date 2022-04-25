@@ -54,14 +54,8 @@ class SignUpNameViewController:
     
     // MARK: - Custom Method Part
     private func checkTextField() {
-    
-        if nameTextField.hasText {
-            nextButton.isEnabled = true
-            nextButton.backgroundColor = UIColor.skyBlue
-        }
-        else {
-            nextButton.isEnabled = false
-            nextButton.backgroundColor = UIColor.lightBlue
-        }
+        /// nameTextField가 채워져있는 지 확인하는 함수입니다.
+        nextButton.isEnabled = nameTextField.hasText
+        nextButton.backgroundColor = nameTextField.hasText ? UIColor.skyBlue : UIColor.lightBlue
     }
 }

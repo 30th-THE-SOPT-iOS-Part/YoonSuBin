@@ -65,14 +65,8 @@ class SignUpPasswordViewController:
     
     // MARK: - Custom Method Part
     private func checkTextField() {
-        
-        if passwordTextField.hasText {
-            nextButton.isEnabled = true
-            nextButton.backgroundColor = UIColor.skyBlue
-        }
-        else {
-            nextButton.isEnabled = false
-            nextButton.backgroundColor = UIColor.lightBlue
-        }
+        /// passwordTextField가 채워져있는 지 확인하는 함수입니다.
+        nextButton.isEnabled = passwordTextField.hasText
+        nextButton.backgroundColor = passwordTextField.hasText ? UIColor.skyBlue : UIColor.lightBlue
     }
 }
