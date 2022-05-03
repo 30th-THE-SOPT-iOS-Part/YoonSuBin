@@ -7,17 +7,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller-->
+        <!--Shop View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="Y6W-OH-hqX" customClass="SearchViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShopViewController" id="Y6W-OH-hqX" customClass="ShopViewController" customModule="Instagram_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="icn_search" selectedImage="icn_search_selected" id="H2w-Zz-Gwv"/>
+                    <tabBarItem key="tabBarItem" title="" image="icn_shop" selectedImage="icn_shop_selected" id="VQx-8N-9Tr"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -26,7 +26,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icn_search" width="24" height="24"/>
-        <image name="icn_search_selected" width="24" height="24"/>
+        <image name="icn_shop" width="24" height="24"/>
+        <image name="icn_shop_selected" width="24" height="24"/>
     </resources>
 </document>
