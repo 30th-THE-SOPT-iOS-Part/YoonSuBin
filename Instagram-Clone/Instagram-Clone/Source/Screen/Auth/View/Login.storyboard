@@ -167,7 +167,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0nm-WM-RGm">
-                        <barButtonItem key="backBarButtonItem" title=" " id="sc6-60-qq3"/>
+                        <nil key="title"/>
                     </navigationItem>
                     <connections>
                         <outlet property="findPasswordButton" destination="KcF-X6-SE5" id="ZDF-y1-F1s"/>
@@ -188,7 +188,7 @@
         <image name="icn_password_hidden" width="20" height="20"/>
         <image name="icn_password_shown" width="20" height="20"/>
         <namedColor name="darkGrey">
-            <color red="0.44705879688262939" green="0.44705873727798462" blue="0.44705885648727417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
