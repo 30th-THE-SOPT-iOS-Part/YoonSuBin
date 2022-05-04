@@ -11,7 +11,7 @@ class HomeFeedTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     static let identifier = "HomeFeedTableViewCell"
-    public var likesButtonEvent : (() -> ())? // 버튼 이벤트 클로저로 구현
+    public var likesButtonEvent : (() -> ())? // 좋아요 카운트 이벤트 클로저
     public var likesCount: Int!
     
     // MARK: - UI Component Part
@@ -44,7 +44,7 @@ class HomeFeedTableViewCell: UITableViewCell {
     
     @IBAction func likeBtnDidTap(_ sender: UIButton) {
         sender.isSelected.toggle()
-        likesButtonEvent?() // 좋아요 이벤트 클로저
+        likesButtonEvent?() // 좋아요 카운트 이벤트
     }
     
     // MARK: - Feed Data Model과 연결

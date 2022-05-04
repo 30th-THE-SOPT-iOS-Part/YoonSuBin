@@ -10,7 +10,6 @@ import UIKit
 final class HomeViewController: UIViewController {
     
     // MARK: - Properties
-    fileprivate var likeCount: Int!
     private enum SectionLayout: CaseIterable {
         case story, feed
     }
@@ -95,11 +94,14 @@ extension HomeViewController: UITableViewDataSource {
             
             feedCell.setDataModel(feedData: HomeFeedDataModel.feedSampleData[indexPath.row])
             
-            /// 클로저 좋아요 카운트 이벤트
-            feedCell.likesButtonEvent = {
-                self.likeCount = feedCell.likesCount
-                if feedCell.likeButton.isSelected == true { self.likeCount += 1 }
-                feedCell.likeLabel.text = "좋아요 \(self.likeCount!)개"
+            /// 좋아요 카운트 이벤트
+            feedCell.likesButtonEvent = { 
+                if feedCell.likeButton.isSelected == true {
+                    feedCell.likesCount += 1
+                } else {
+                    feedCell.likesCount -= 1
+                }
+                feedCell.likeLabel.text = "좋아요 \(feedCell.likesCount!)개"
             }
             return feedCell
         }
