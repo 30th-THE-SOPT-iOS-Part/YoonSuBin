@@ -107,7 +107,7 @@
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" image="icn_save"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAp-pZ-ZgH">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAp-pZ-ZgH">
                         <rect key="frame" x="12" y="427.33333333333331" width="30" height="13.333333333333314"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
                         <nil key="textColor"/>
@@ -132,6 +132,9 @@
                     </button>
                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qcU-G9-U4o">
                         <rect key="frame" x="0.0" y="46" width="375" height="338.33333333333331"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="338.32999999999998" id="unW-eM-g7Q"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <constraints>

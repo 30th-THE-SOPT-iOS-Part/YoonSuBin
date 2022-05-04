@@ -35,12 +35,10 @@
 		8E86DDC6280C304E00B1BC73 /* TabBarMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E86DDC5280C304E00B1BC73 /* TabBarMain.storyboard */; };
 		8E86DDC8280C365000B1BC73 /* UITabBarController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86DDC7280C365000B1BC73 /* UITabBarController+.swift */; };
 		8E86DDCA280C3B9300B1BC73 /* TabBarMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86DDC9280C3B9300B1BC73 /* TabBarMainViewController.swift */; };
-		8E99B8B22808435A00D2AF4B /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8B12808435A00D2AF4B /* UIView+.swift */; };
 		8E99B8BE280844D500D2AF4B /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8BD280844D500D2AF4B /* AuthModel.swift */; };
 		8E99B8C02808458C00D2AF4B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8BF2808458C00D2AF4B /* LoginView.swift */; };
 		8E99B8C2280846F800D2AF4B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8C1280846F800D2AF4B /* SignUpView.swift */; };
 		8E99B8C42808470D00D2AF4B /* AuthCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8C32808470D00D2AF4B /* AuthCompleteView.swift */; };
-		8E99B8C8280847F200D2AF4B /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8C7280847F200D2AF4B /* UITextField+.swift */; };
 		8E99B8CC2808496E00D2AF4B /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8CB2808496E00D2AF4B /* UIColor+.swift */; };
 		8E99B8CE28084AFC00D2AF4B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E99B8CD28084AFB00D2AF4B /* Colors.xcassets */; };
 		8EE7D0E3280C03F6000F27D7 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */; };
@@ -84,12 +82,10 @@
 		8E86DDC5280C304E00B1BC73 /* TabBarMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarMain.storyboard; sourceTree = "<group>"; };
 		8E86DDC7280C365000B1BC73 /* UITabBarController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+.swift"; sourceTree = "<group>"; };
 		8E86DDC9280C3B9300B1BC73 /* TabBarMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMainViewController.swift; sourceTree = "<group>"; };
-		8E99B8B12808435A00D2AF4B /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		8E99B8BD280844D500D2AF4B /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		8E99B8BF2808458C00D2AF4B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8E99B8C1280846F800D2AF4B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		8E99B8C32808470D00D2AF4B /* AuthCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCompleteView.swift; sourceTree = "<group>"; };
-		8E99B8C7280847F200D2AF4B /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		8E99B8CB2808496E00D2AF4B /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		8E99B8CD28084AFB00D2AF4B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
@@ -291,8 +287,6 @@
 		8E99B8A7280840FD00D2AF4B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8E99B8B12808435A00D2AF4B /* UIView+.swift */,
-				8E99B8C7280847F200D2AF4B /* UITextField+.swift */,
 				8E99B8CB2808496E00D2AF4B /* UIColor+.swift */,
 				8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */,
 				8E86DDC7280C365000B1BC73 /* UITabBarController+.swift */,
@@ -469,7 +463,6 @@
 				8EFEB5D8280C224800F092EA /* ReelsViewController.swift in Sources */,
 				8E99B8CC2808496E00D2AF4B /* UIColor+.swift in Sources */,
 				8E37315827FEDFDB00942C46 /* SignUpNameViewController.swift in Sources */,
-				8E99B8B22808435A00D2AF4B /* UIView+.swift in Sources */,
 				8E37313E27FED34F00942C46 /* AppDelegate.swift in Sources */,
 				8E37315C27FEE01A00942C46 /* AuthCompleteViewController.swift in Sources */,
 				8EFEB5CE280C217400F092EA /* TabBarMainModel.swift in Sources */,
@@ -479,7 +472,6 @@
 				8E86DDCA280C3B9300B1BC73 /* TabBarMainViewController.swift in Sources */,
 				8E7EFB32281A696200AD7E08 /* HomeFeedTableViewCell.swift in Sources */,
 				8EFEB5D4280C21BE00F092EA /* HomeViewController.swift in Sources */,
-				8E99B8C8280847F200D2AF4B /* UITextField+.swift in Sources */,
 				8E7EFB4E281B141900AD7E08 /* HomeStoryDataModel.swift in Sources */,
 				8EFEB5DA280C225300F092EA /* ShopViewController.swift in Sources */,
 				8E86DDC8280C365000B1BC73 /* UITabBarController+.swift in Sources */,
