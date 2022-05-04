@@ -73,8 +73,8 @@ extension HomeViewController: UITableViewDataSource {
     
     /// 테이블 뷰의 section의 index를 가지고 해당 sections에 포함된 셀 수를 알려주는 메서드
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    
-        switch SectionLayout.allCases[section] {
+        let sectionType = SectionLayout.allCases[section]
+        switch sectionType {
         case .story:
             return 1
         case .feed:
@@ -84,8 +84,8 @@ extension HomeViewController: UITableViewDataSource {
     
     /// 테이블 뷰에서 특정 index에 있는 셀을 알려주는 메서드
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        switch SectionLayout.allCases[indexPath.section] {
+        let sectionType = SectionLayout.allCases[section]
+        switch sectionType {
         case .story:
             guard let storyCell = homeTableView.dequeueReusableCell(withIdentifier: HomeStoryTableViewCell.identifier, for: indexPath) as? HomeStoryTableViewCell else { return UITableViewCell() }
             return storyCell
