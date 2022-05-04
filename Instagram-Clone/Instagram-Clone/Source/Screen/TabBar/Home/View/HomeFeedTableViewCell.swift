@@ -29,9 +29,7 @@ class HomeFeedTableViewCell: UITableViewCell {
     @IBOutlet weak var saveButton: UIButton!
     
     @IBOutlet weak var likeLabel: UILabel!
-    @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var captionLabel: UILabel!
-    
+    @IBOutlet weak var userCaptionLabel: UILabel!
     @IBOutlet weak var viewAllCommentsButton: UIButton!
 
     // MARK: - awakeFromNib
@@ -57,13 +55,10 @@ class HomeFeedTableViewCell: UITableViewCell {
         profileImageView.image = UIImage(named: feedData.profileImage)
         profileUsernameLabel.text = feedData.profileUsername
         
-        // + 페이지 컨트롤 구현하기
         photoImageView.image = UIImage(named: feedData.photo)
+        
         likeLabel.text = "좋아요 \(feedData.likes)개"
-        
-        usernameLabel.text = feedData.username
-        captionLabel.text = feedData.caption
-        
+        userCaptionLabel.text = feedData.userCaption
         viewAllCommentsButton.setTitle("댓글 \(feedData.comments)개 모두 보기", for: .normal)
     }
 }
