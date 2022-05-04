@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     private let feedModel = HomeFeedDataModel.feedSampleData
     private let feedTVC = HomeFeedTableViewCell(style: .default, reuseIdentifier: "")
-    
+    private var likeCount: Int?
     private enum SectionLayout: CaseIterable {
         case story, feed
     }
@@ -97,17 +97,11 @@ extension HomeViewController: UITableViewDataSource {
             
             feedCell.setDataModel(feedData: HomeFeedDataModel.feedSampleData[indexPath.row])
             
+            /// 클로저 좋아요 카운트 이벤트
             feedCell.likesButtonEvent = {
-                /// 클로저 좋아요 카운트 이벤트
-                if feedCell.likeButton.isSelected == true {
-                    print("클로저 좋아요 설정")
-                    let count = feedCell.likesCount + 1
-                    feedCell.likeLabel.text = "좋아요 \(count)개"
-                } else {
-                    print("클로저 좋아요 해제")
-                    let count = feedCell.likesCount + 0
-                    feedCell.likeLabel.text = "좋아요 \(count)개"
-                }
+                self.likeCount = feedCell.likesCount
+                if feedCell.likeButton.isSelected == true { self.likeCount! += 1 }
+                feedCell.likeLabel.text = "좋아요 \(self.likeCount!)개"
             }
             return feedCell
         }
