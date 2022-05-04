@@ -84,7 +84,7 @@ extension HomeViewController: UITableViewDataSource {
     
     /// 테이블 뷰에서 특정 index에 있는 셀을 알려주는 메서드
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let sectionType = SectionLayout.allCases[section]
+        let sectionType = SectionLayout.allCases[indexPath.section]
         switch sectionType {
         case .story:
             guard let storyCell = homeTableView.dequeueReusableCell(withIdentifier: HomeStoryTableViewCell.identifier, for: indexPath) as? HomeStoryTableViewCell else { return UITableViewCell() }
