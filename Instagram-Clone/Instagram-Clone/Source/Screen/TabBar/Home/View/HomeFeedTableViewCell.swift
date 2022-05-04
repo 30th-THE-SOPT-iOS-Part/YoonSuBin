@@ -50,8 +50,8 @@ class HomeFeedTableViewCell: UITableViewCell {
     // MARK: - Feed Data Model과 연결
     func setDataModel(feedData: HomeFeedDataModel) {
         
-        likesCount = feedData.likes // likes값 넘기기
-        
+        likesCount = feedData.likes // likes값 HomeViewController로 넘기기
+
         profileImageView.image = UIImage(named: feedData.profileImage)
         profileUsernameLabel.text = feedData.profileUsername
         
