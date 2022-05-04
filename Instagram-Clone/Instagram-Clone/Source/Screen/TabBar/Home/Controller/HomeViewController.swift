@@ -10,8 +10,6 @@ import UIKit
 class HomeViewController: UIViewController {
     
     // MARK: - Properties
-    private let feedModel = HomeFeedDataModel.feedSampleData
-    private let feedTVC = HomeFeedTableViewCell(style: .default, reuseIdentifier: "")
     private var likeCount: Int?
     private enum SectionLayout: CaseIterable {
         case story, feed
