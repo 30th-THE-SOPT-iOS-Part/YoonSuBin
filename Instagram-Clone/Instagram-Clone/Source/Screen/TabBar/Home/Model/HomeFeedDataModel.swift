@@ -12,6 +12,7 @@ struct HomeFeedDataModel {
     let profileUsername: String
     
     let photo: String
+    var images: UIImage { return .load(named: photo) }
     let likes: Int
     
     var userCaption: String? {
@@ -27,7 +28,7 @@ extension HomeFeedDataModel {
         HomeFeedDataModel(
             profileImage: "Subin3",
             profileUsername: "subin_sopt",
-            photo: "sopt_ticket",
+            photo: "sopt1",
             likes: 176,
             caption: "아요미 1호 인증완",
             comments: 32
@@ -47,6 +48,14 @@ extension HomeFeedDataModel {
             likes: 47,
             caption: "시험 끝나고 석촌호수에 다시 오리...🐤 꽉꽉",
             comments: 11
+        ),
+        HomeFeedDataModel(
+            profileImage: "starbooks",
+            profileUsername: "starbooks_seoul",
+            photo: "coffee",
+            likes: 15,
+            caption: "커피 한잔할래요?",
+            comments: 9
         ),
         HomeFeedDataModel(
             profileImage: "iOS_logo",
