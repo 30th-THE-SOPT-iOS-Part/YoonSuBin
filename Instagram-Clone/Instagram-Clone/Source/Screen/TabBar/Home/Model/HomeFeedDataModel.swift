@@ -15,9 +15,7 @@ struct HomeFeedDataModel {
     var images: UIImage { return .load(named: photo) }
     let likes: Int
     
-    var userCaption: String? {
-        return "\(profileUsername) \(caption)"
-    }
+    var userCaption: String? { return "\(profileUsername) \(caption)" }
     
     let caption: String
     let comments: Int

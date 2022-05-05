@@ -9,7 +9,7 @@ import UIKit
 
 final class AuthCompleteViewController: UIViewController {
     
-    // MARK: - Var & Let Part
+    // MARK: - Properties
     var userName: String?
     
     // MARK: - UI Component Part

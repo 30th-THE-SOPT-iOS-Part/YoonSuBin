@@ -27,7 +27,7 @@ class TabBarMainViewController:
     }
 }
 
-// MARK: - Extension Part
+// MARK: - UITabBarController Delegate
 extension TabBarMainViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         tabBarReverseCustom(wantToChangeIndex: 2)
