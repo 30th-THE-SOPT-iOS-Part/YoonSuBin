@@ -7,8 +7,7 @@
 
 import UIKit
 
-class AuthCompleteViewController:
-    UIViewController {
+final class AuthCompleteViewController: UIViewController {
     
     // MARK: - Var & Let Part
     var userName: String?

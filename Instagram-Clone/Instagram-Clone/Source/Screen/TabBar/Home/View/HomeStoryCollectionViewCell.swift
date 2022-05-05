@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeStoryCollectionViewCell: UICollectionViewCell {
+final class HomeStoryCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     static let identifier = "HomeStoryCollectionViewCell"

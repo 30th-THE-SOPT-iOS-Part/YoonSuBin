@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeFeedTableViewCell: UITableViewCell {
+final class HomeFeedTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     static let identifier = "HomeFeedTableViewCell"

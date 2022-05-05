@@ -7,8 +7,7 @@
 
 import UIKit
 
-class SignUpPasswordViewController:
-    UIViewController {
+final class SignUpPasswordViewController: UIViewController {
     
     // MARK: - Var & Let Part
     var userName : String?

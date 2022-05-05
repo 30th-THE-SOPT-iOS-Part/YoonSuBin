@@ -7,8 +7,7 @@
 
 import UIKit
 
-class SignUpNameViewController:
-    UIViewController {
+final class SignUpNameViewController: UIViewController {
     
     // MARK: - UI Component Part
     @IBOutlet weak var nameMessageLabel: UILabel!
