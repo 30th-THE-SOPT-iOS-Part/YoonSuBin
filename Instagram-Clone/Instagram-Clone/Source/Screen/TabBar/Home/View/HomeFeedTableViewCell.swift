@@ -11,7 +11,7 @@ class HomeFeedTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     static let identifier = "HomeFeedTableViewCell"
-    public var likesButtonEvent : (() -> ())? // 좋아요 카운트 이벤트 클로저
+    public var likesButtonEvent : (() -> ())?
     public var likesCount: Int!
     
     // MARK: - UI Component Part
@@ -44,18 +44,18 @@ class HomeFeedTableViewCell: UITableViewCell {
     
     @IBAction func likeBtnDidTap(_ sender: UIButton) {
         sender.isSelected.toggle()
-        likesButtonEvent?() // 좋아요 카운트 이벤트
+        likesButtonEvent?()
     }
     
     // MARK: - Feed Data Model과 연결
     func setDataModel(feedData: HomeFeedDataModel) {
         
-        likesCount = feedData.likes // likes값 HomeViewController로 넘기기
+        likesCount = feedData.likes
 
         profileImageView.image = UIImage(named: feedData.profileImage)
         profileUsernameLabel.text = feedData.profileUsername
         
-        photoImageView.image = feedData.images.resize(length: CGFloat(frame.width)) //
+        photoImageView.image = feedData.images.resize(length: CGFloat(frame.width))
         
         likeLabel.text = "좋아요 \(feedData.likes)개"
         userCaptionLabel.text = feedData.userCaption

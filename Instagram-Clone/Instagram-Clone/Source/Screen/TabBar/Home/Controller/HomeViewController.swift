@@ -94,8 +94,7 @@ extension HomeViewController: UITableViewDataSource {
             
             feedCell.setDataModel(feedData: HomeFeedDataModel.feedSampleData[indexPath.row])
             
-            /// 좋아요 카운트 이벤트
-            feedCell.likesButtonEvent = { 
+            feedCell.likesButtonEvent = {
                 if feedCell.likeButton.isSelected == true {
                     feedCell.likesCount += 1
                 } else {
