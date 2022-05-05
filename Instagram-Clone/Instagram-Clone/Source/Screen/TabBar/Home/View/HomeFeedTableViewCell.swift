@@ -11,7 +11,7 @@ class HomeFeedTableViewCell: UITableViewCell {
     
     // MARK: - Properties
     static let identifier = "HomeFeedTableViewCell"
-    public var likesButtonEvent : (() -> ())?
+    public var likesButtonEvent : (() -> Void)?
     public var likesCount: Int!
     
     // MARK: - UI Component Part
