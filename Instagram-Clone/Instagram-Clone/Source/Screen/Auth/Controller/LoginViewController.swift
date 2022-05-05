@@ -62,9 +62,6 @@ final class LoginViewController: UIViewController {
     // MARK: - Custom UI
     private func setUI() {
         /// Button
-        loginButton.layer.cornerRadius = 5
-        loginButton.setTitleColor(.white, for: .normal)
-        loginButton.setTitleColor(.white, for: .disabled)
         backButtonCustom()
         
         /// TextField

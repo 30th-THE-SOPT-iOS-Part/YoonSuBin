@@ -28,6 +28,11 @@
                                 <state key="normal" title="완료하기">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="completeBtnDidTap:" destination="zZD-7f-bJ4" eventType="touchUpInside" id="Awn-ux-way"/>
                                 </connections>

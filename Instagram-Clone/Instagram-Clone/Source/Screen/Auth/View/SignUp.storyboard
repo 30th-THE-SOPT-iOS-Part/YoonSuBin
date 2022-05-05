@@ -47,6 +47,11 @@
                                 <state key="normal" title="다음">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextBtnDidTap:" destination="rqc-Ve-Cr1" eventType="touchUpInside" id="xGI-bV-zXj"/>
                                 </connections>
@@ -137,6 +142,11 @@
                                 <state key="normal" title="다음">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextBtnDidTap:" destination="CWE-yN-p3t" eventType="touchUpInside" id="OFD-gd-nYs"/>
                                 </connections>

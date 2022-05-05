@@ -49,11 +49,6 @@ final class SignUpPasswordViewController: UIViewController {
     
     // MARK: - Custom UI
     private func setUI() {
-        /// Button
-        nextButton.layer.cornerRadius = 5
-        nextButton.setTitleColor(.white, for: .normal)
-        nextButton.setTitleColor(.white, for: .disabled)
-        
         /// Label
         passwordMessageLabel.text = "비밀번호를 저장할 수 있으므로 iCloud® 기기에서 로그인 정보를 입력하지 않아도 됩니다."
         self.passwordMessageLabel.numberOfLines = 2

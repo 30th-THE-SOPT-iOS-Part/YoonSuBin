@@ -38,9 +38,6 @@ final class SignUpNameViewController: UIViewController {
     // MARK: - Custom UI
     private func setUI() {
         /// Button
-        nextButton.layer.cornerRadius = 5
-        nextButton.setTitleColor(.white, for: .normal)
-        nextButton.setTitleColor(.white, for: .disabled)
         backButtonCustom()
         
         /// Label

@@ -20,7 +20,7 @@ final class AuthCompleteViewController: UIViewController {
     // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
+//        setUI()
         setUserName()
     }
     
@@ -35,12 +35,6 @@ final class AuthCompleteViewController: UIViewController {
     @IBAction func addAccountBtnDidTap(_ sender: Any) {
         /// dismiss
         self.dismiss(animated: true, completion: nil)
-    }
-    
-    // MARK: - Custom UI
-    private func setUI() {
-        /// Button
-        completeButton.layer.cornerRadius = 5
     }
     
     // MARK: - Custom Method Part
