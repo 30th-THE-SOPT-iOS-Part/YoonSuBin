@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E2C0E8F2822C2D000B04F16 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C0E8E2822C2D000B04F16 /* UIImage+.swift */; };
 		8E37313E27FED34F00942C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37313D27FED34F00942C46 /* AppDelegate.swift */; };
 		8E37314027FED34F00942C46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37313F27FED34F00942C46 /* SceneDelegate.swift */; };
 		8E37314227FED34F00942C46 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E37314127FED34F00942C46 /* LoginViewController.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E2C0E8E2822C2D000B04F16 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		8E37313A27FED34F00942C46 /* Instagram-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E37313D27FED34F00942C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E37313F27FED34F00942C46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				8E99B8CB2808496E00D2AF4B /* UIColor+.swift */,
 				8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */,
 				8E86DDC7280C365000B1BC73 /* UITabBarController+.swift */,
+				8E2C0E8E2822C2D000B04F16 /* UIImage+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				8E37315827FEDFDB00942C46 /* SignUpNameViewController.swift in Sources */,
 				8E37313E27FED34F00942C46 /* AppDelegate.swift in Sources */,
 				8E37315C27FEE01A00942C46 /* AuthCompleteViewController.swift in Sources */,
+				8E2C0E8F2822C2D000B04F16 /* UIImage+.swift in Sources */,
 				8EFEB5CE280C217400F092EA /* TabBarMainModel.swift in Sources */,
 				8E7EFB57281BF71600AD7E08 /* HomeStoryTableViewCell.swift in Sources */,
 				8EE7D0E3280C03F6000F27D7 /* UIViewController+.swift in Sources */,

@@ -55,7 +55,7 @@ class HomeFeedTableViewCell: UITableViewCell {
         profileImageView.image = UIImage(named: feedData.profileImage)
         profileUsernameLabel.text = feedData.profileUsername
         
-        photoImageView.image = UIImage(named: feedData.photo)
+        photoImageView.image = feedData.images.resize(length: CGFloat(frame.width)) //
         
         likeLabel.text = "좋아요 \(feedData.likes)개"
         userCaptionLabel.text = feedData.userCaption
