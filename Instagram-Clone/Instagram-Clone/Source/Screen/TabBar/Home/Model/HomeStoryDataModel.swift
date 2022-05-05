@@ -20,6 +20,9 @@ extension HomeStoryDataModel {
         HomeStoryDataModel(profileImage: "Sua", profileUsername: "sua"),
         HomeStoryDataModel(profileImage: "YoungIn", profileUsername: "youngin"),
         HomeStoryDataModel(profileImage: "Youngrin", profileUsername: "youngrin"),
-        HomeStoryDataModel(profileImage: "Subin", profileUsername: "subin")
+        HomeStoryDataModel(profileImage: "Subin", profileUsername: "subin1"),
+        HomeStoryDataModel(profileImage: "Subin2", profileUsername: "subin2"),
+        HomeStoryDataModel(profileImage: "Subin3", profileUsername: "subin3"),
+        HomeStoryDataModel(profileImage: "iOS_logo", profileUsername: "i_yo_mi"),
     ]
 }
