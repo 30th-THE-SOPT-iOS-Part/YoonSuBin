@@ -32,13 +32,8 @@ class HomeStoryTableViewCell: UITableViewCell {
     }
 }
 
-// MARK: - UICollectionView Delegate
-extension HomeStoryTableViewCell: UICollectionViewDelegate {
-    
-}
-
-// MARK: - UICollectionView DataSource
-extension HomeStoryTableViewCell: UICollectionViewDataSource {
+// MARK: - UICollectionView Delegate, DataSource
+extension HomeStoryTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     /// 컬렉션 뷰의 전체 section수를 지정하는 메서드
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -56,8 +51,7 @@ extension HomeStoryTableViewCell: UICollectionViewDataSource {
     }
 }
 
-// MARK: - UICollectionView FlowLayou
-
+// MARK: - UICollectionView FlowLayout
 /// 추가 셋팅 :  컬렉션 뷰 셀 정렬, 간격 지정
  extension HomeStoryTableViewCell: UICollectionViewDelegateFlowLayout {
      func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

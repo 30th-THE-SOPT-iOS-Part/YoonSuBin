@@ -56,14 +56,8 @@ final class HomeViewController: UIViewController {
     }
 }
 
-
-// MARK: - UITableView Delegate
-extension HomeViewController: UITableViewDelegate {
-    
-}
-
-// MARK: - UITableView DataSource
-extension HomeViewController: UITableViewDataSource {
+// MARK: - UITableView Delegate, DataSource
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     /// 테이블 뷰의 전체 section수를 지정하는는 메서드
     func numberOfSections(in tableView: UITableView) -> Int {
