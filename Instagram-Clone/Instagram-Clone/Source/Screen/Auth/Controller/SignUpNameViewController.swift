@@ -39,10 +39,6 @@ final class SignUpNameViewController: UIViewController {
     private func setUI() {
         /// Button
         backButtonCustom()
-        
-        /// Label
-        nameMessageLabel.text = "새 계정에 사용할 사용자 이름을 선택하세요. 나중에 언제든지 변경할 수 있습니다."
-        self.nameMessageLabel.numberOfLines = 2
     }
     
     // MARK: - Custom Method Part

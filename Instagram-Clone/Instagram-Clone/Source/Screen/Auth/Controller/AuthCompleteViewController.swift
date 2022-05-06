@@ -20,7 +20,6 @@ final class AuthCompleteViewController: UIViewController {
     // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setUI()
         setUserName()
     }
     
@@ -41,7 +40,6 @@ final class AuthCompleteViewController: UIViewController {
     private func setUserName() {
         if let userName = userName {
             welcomeMessageLabel.text = "\(userName)님, Instagram에 오신 것을 환영합니다"
-            self.welcomeMessageLabel.numberOfLines = 2
         }
     }
 }
