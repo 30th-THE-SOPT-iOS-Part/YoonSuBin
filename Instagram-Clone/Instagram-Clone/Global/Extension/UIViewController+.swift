@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIViewController {
-    /// Left Back Button Custom
+    /// 네비게이션바 Left Back Button Custom
     func backButtonCustom() {
         let backBtnIcon = UIImage(named: "icn_back")
         self.navigationController?.navigationBar.backIndicatorImage = backBtnIcon
