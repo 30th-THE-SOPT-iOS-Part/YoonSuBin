@@ -27,7 +27,7 @@ final class SignUpPasswordViewController: UIViewController {
     // MARK: - IBAction Part
     @IBAction func nextBtnDidTap(_ sender: Any) {
         /// pop
-        guard let authCompleteVC = UIStoryboard(name: "AuthComplete", bundle: nil).instantiateViewController(withIdentifier: "AuthCompleteViewController") as? AuthCompleteViewController else { return }
+        guard let authCompleteVC = UIStoryboard(name: "AuthComplete", bundle: nil).instantiateViewController(withIdentifier: AuthCompleteViewController.className) as? AuthCompleteViewController else { return }
         
         authCompleteVC.userName = userName
         

@@ -36,7 +36,7 @@ final class LoginViewController: UIViewController {
     
     @IBAction func loginBtnDidTap(_ sender: Any) {
         /// present
-        guard let authCompleteVC = UIStoryboard(name: "AuthComplete", bundle: nil).instantiateViewController(withIdentifier: "AuthCompleteViewController") as? AuthCompleteViewController else { return }
+        guard let authCompleteVC = UIStoryboard(name: "AuthComplete", bundle: nil).instantiateViewController(withIdentifier: AuthCompleteViewController.className) as? AuthCompleteViewController else { return }
         
         authCompleteVC.userName = nameTextField.text
 
@@ -46,7 +46,7 @@ final class LoginViewController: UIViewController {
     
     @IBAction func signUpBtnDidTap(_ sender: Any) {
         /// push
-        guard let signUpNameVC = UIStoryboard(name: "SignUp", bundle: nil).instantiateViewController(withIdentifier: "SignUpNameViewController") as? SignUpNameViewController else { return }
+        guard let signUpNameVC = UIStoryboard(name: "SignUp", bundle: nil).instantiateViewController(withIdentifier: SignUpNameViewController.className) as? SignUpNameViewController else { return }
         
         self.navigationController?.pushViewController(signUpNameVC, animated: true)
     }

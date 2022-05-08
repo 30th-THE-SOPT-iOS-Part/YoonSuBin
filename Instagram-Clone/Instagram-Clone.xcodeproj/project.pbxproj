@@ -42,6 +42,7 @@
 		8EB6A1CC282568D4005C5A12 /* HomeFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6A1CA282568D4005C5A12 /* HomeFeedCollectionViewCell.swift */; };
 		8EB6A1CD282568D4005C5A12 /* HomeFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6A1CB282568D4005C5A12 /* HomeFeedCollectionViewCell.xib */; };
 		8EE7D0E3280C03F6000F27D7 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */; };
+		8EFAFCD8282819990090EAB4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFAFCD7282819990090EAB4 /* UIView+.swift */; };
 		8EFEB5CE280C217400F092EA /* TabBarMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEB5CD280C217400F092EA /* TabBarMainModel.swift */; };
 		8EFEB5D4280C21BE00F092EA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEB5D3280C21BE00F092EA /* HomeViewController.swift */; };
 		8EFEB5D6280C220800F092EA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEB5D5280C220800F092EA /* SearchViewController.swift */; };
@@ -88,6 +89,7 @@
 		8EB6A1CA282568D4005C5A12 /* HomeFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		8EB6A1CB282568D4005C5A12 /* HomeFeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFeedCollectionViewCell.xib; sourceTree = "<group>"; };
 		8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		8EFAFCD7282819990090EAB4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		8EFEB5CD280C217400F092EA /* TabBarMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMainModel.swift; sourceTree = "<group>"; };
 		8EFEB5D3280C21BE00F092EA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8EFEB5D5280C220800F092EA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -287,9 +289,10 @@
 			isa = PBXGroup;
 			children = (
 				8E99B8CB2808496E00D2AF4B /* UIColor+.swift */,
+				8E2C0E8E2822C2D000B04F16 /* UIImage+.swift */,
+				8EFAFCD7282819990090EAB4 /* UIView+.swift */,
 				8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */,
 				8E86DDC7280C365000B1BC73 /* UITabBarController+.swift */,
-				8E2C0E8E2822C2D000B04F16 /* UIImage+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				8E7EFB50281B142700AD7E08 /* HomeFeedDataModel.swift in Sources */,
 				8EFEB5DC280C225C00F092EA /* ProfileViewController.swift in Sources */,
 				8E7EFB41281A8FD100AD7E08 /* HomeStoryCollectionViewCell.swift in Sources */,
+				8EFAFCD8282819990090EAB4 /* UIView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

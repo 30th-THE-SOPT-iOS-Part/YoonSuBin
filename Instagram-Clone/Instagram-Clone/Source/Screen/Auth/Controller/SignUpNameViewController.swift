@@ -24,7 +24,7 @@ final class SignUpNameViewController: UIViewController {
     // MARK: - IBAction Part
     @IBAction func nextBtnDidTap(_ sender: Any) {
         /// push
-        guard let signUpPasswordVC = UIStoryboard(name: "SignUp", bundle: nil).instantiateViewController(withIdentifier: "SignUpPasswordViewController") as? SignUpPasswordViewController else { return }
+        guard let signUpPasswordVC = UIStoryboard(name: "SignUp", bundle: nil).instantiateViewController(withIdentifier: SignUpPasswordViewController.className) as? SignUpPasswordViewController else { return }
         
         signUpPasswordVC.userName = nameTextField.text
         
