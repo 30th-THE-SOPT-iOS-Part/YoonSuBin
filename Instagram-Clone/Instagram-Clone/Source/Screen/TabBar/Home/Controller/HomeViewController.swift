@@ -15,28 +15,12 @@ final class HomeViewController: UIViewController {
     }
 
     // MARK: - UI Component Part
-    @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var likeButton: UIButton!
-    @IBOutlet weak var messageButton: UIButton!
     @IBOutlet weak var homeTableView: UITableView!
     
     // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
-    }
-    
-    // MARK: - IBAction Part
-    @IBAction func addBtnDidTap(_ sender: Any) {
-        print("add btn did tap")
-    }
-
-    @IBAction func likeBtnDidTap(_ sender: Any) {
-        print("like btn did tap")
-    }
-
-    @IBAction func messageBtnDidTap(_ sender: Any) {
-        print("message btn did tap")
     }
     
     // MARK: - TableViewCell registerNib Part
@@ -86,7 +70,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case .feed:
             guard let feedCell = homeTableView.dequeueReusableCell(withIdentifier: HomeFeedTableViewCell.identifier, for: indexPath) as? HomeFeedTableViewCell else { return UITableViewCell() }
             
-            feedCell.setDataModel(feedData: HomeFeedDataModel.feedSampleData[indexPath.row])
+            feedCell.model = HomeFeedDataModel.feedSampleData[indexPath.row]
             
             feedCell.likesButtonEvent = {
                 if feedCell.likeButton.isSelected == true {

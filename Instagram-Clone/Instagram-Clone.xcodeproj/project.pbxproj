@@ -39,6 +39,8 @@
 		8E99B8BE280844D500D2AF4B /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8BD280844D500D2AF4B /* AuthModel.swift */; };
 		8E99B8CC2808496E00D2AF4B /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E99B8CB2808496E00D2AF4B /* UIColor+.swift */; };
 		8E99B8CE28084AFC00D2AF4B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E99B8CD28084AFB00D2AF4B /* Colors.xcassets */; };
+		8EB6A1CC282568D4005C5A12 /* HomeFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6A1CA282568D4005C5A12 /* HomeFeedCollectionViewCell.swift */; };
+		8EB6A1CD282568D4005C5A12 /* HomeFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6A1CB282568D4005C5A12 /* HomeFeedCollectionViewCell.xib */; };
 		8EE7D0E3280C03F6000F27D7 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */; };
 		8EFEB5CE280C217400F092EA /* TabBarMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEB5CD280C217400F092EA /* TabBarMainModel.swift */; };
 		8EFEB5D4280C21BE00F092EA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFEB5D3280C21BE00F092EA /* HomeViewController.swift */; };
@@ -83,6 +85,8 @@
 		8E99B8BD280844D500D2AF4B /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		8E99B8CB2808496E00D2AF4B /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		8E99B8CD28084AFB00D2AF4B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8EB6A1CA282568D4005C5A12 /* HomeFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		8EB6A1CB282568D4005C5A12 /* HomeFeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFeedCollectionViewCell.xib; sourceTree = "<group>"; };
 		8EE7D0E2280C03F6000F27D7 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		8EFEB5CD280C217400F092EA /* TabBarMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMainModel.swift; sourceTree = "<group>"; };
 		8EFEB5D3280C21BE00F092EA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -155,9 +159,11 @@
 				8E7EFB56281BF71600AD7E08 /* HomeStoryTableViewCell.xib */,
 				8E7EFB40281A8FD100AD7E08 /* HomeStoryCollectionViewCell.xib */,
 				8E7EFB31281A696200AD7E08 /* HomeFeedTableViewCell.xib */,
+				8EB6A1CB282568D4005C5A12 /* HomeFeedCollectionViewCell.xib */,
 				8E7EFB55281BF71600AD7E08 /* HomeStoryTableViewCell.swift */,
 				8E7EFB3F281A8FD100AD7E08 /* HomeStoryCollectionViewCell.swift */,
 				8E7EFB30281A696200AD7E08 /* HomeFeedTableViewCell.swift */,
+				8EB6A1CA282568D4005C5A12 /* HomeFeedCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB6A1CD282568D4005C5A12 /* HomeFeedCollectionViewCell.xib in Resources */,
 				8E86DDBB280C23B700B1BC73 /* Reels.storyboard in Resources */,
 				8E7EFB42281A8FD100AD7E08 /* HomeStoryCollectionViewCell.xib in Resources */,
 				8E37314A27FED35000942C46 /* LaunchScreen.storyboard in Resources */,
@@ -464,6 +471,7 @@
 				8E7EFB32281A696200AD7E08 /* HomeFeedTableViewCell.swift in Sources */,
 				8EFEB5D4280C21BE00F092EA /* HomeViewController.swift in Sources */,
 				8E7EFB4E281B141900AD7E08 /* HomeStoryDataModel.swift in Sources */,
+				8EB6A1CC282568D4005C5A12 /* HomeFeedCollectionViewCell.swift in Sources */,
 				8EFEB5DA280C225300F092EA /* ShopViewController.swift in Sources */,
 				8E86DDC8280C365000B1BC73 /* UITabBarController+.swift in Sources */,
 				8EFEB5D6280C220800F092EA /* SearchViewController.swift in Sources */,

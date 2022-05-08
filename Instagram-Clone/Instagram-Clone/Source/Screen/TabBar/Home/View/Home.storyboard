@@ -36,9 +36,6 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icn_add"/>
-                                                <connections>
-                                                    <action selector="addBtnDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zNT-GJ-Zmf"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ut1-un-N6v">
                                                 <rect key="frame" x="40" y="0.0" width="24" height="24"/>
@@ -48,9 +45,6 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icn_unlike"/>
-                                                <connections>
-                                                    <action selector="likeBtnDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3c7-BD-mew"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhm-nO-VgA">
                                                 <rect key="frame" x="80" y="0.0" width="24" height="24"/>
@@ -60,9 +54,6 @@
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="icn_message"/>
-                                                <connections>
-                                                    <action selector="messageBtnDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Gk5-ky-xfL"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -95,10 +86,7 @@
                     <navigationItem key="navigationItem" id="7xJ-YT-cRn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="addButton" destination="r3h-Fg-s6C" id="SiV-Ee-7UN"/>
                         <outlet property="homeTableView" destination="bLC-6n-Voe" id="Xlu-el-Fo1"/>
-                        <outlet property="likeButton" destination="ut1-un-N6v" id="wvy-Ob-a3x"/>
-                        <outlet property="messageButton" destination="Rhm-nO-VgA" id="h8W-qp-iFo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

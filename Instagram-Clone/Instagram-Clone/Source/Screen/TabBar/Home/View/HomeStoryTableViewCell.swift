@@ -51,7 +51,7 @@ extension HomeStoryTableViewCell: UICollectionViewDelegate, UICollectionViewData
     }
 }
 
-// MARK: - UICollectionView FlowLayout
+// MARK: - UICollectionView DelegateFlowLayout
 /// 추가 셋팅 :  컬렉션 뷰 셀 정렬, 간격 지정
  extension HomeStoryTableViewCell: UICollectionViewDelegateFlowLayout {
      func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
