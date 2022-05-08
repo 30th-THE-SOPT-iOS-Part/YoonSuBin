@@ -94,8 +94,7 @@ extension HomeFeedTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = imageCollectionView.dequeueReusableCell(withReuseIdentifier: HomeFeedCollectionViewCell.identifier, for: indexPath) as? HomeFeedCollectionViewCell else { return UICollectionViewCell() }
-        
-        cell.setImageModel(feedImage: (model?.photo[indexPath.row])!)
+        cell.setImageModel(feedImage: model?.photo[indexPath.row] ?? "")
 
         return cell
     }
