@@ -64,7 +64,7 @@
                         </constraints>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="UCX-JF-vk3">
-                        <rect key="frame" x="10" y="390.33333333333331" width="104" height="24"/>
+                        <rect key="frame" x="10" y="390" width="104" height="24"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MT-8J-QNf">
                                 <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -100,12 +100,12 @@
                         </subviews>
                     </stackView>
                     <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="QeV-kV-CEo">
-                        <rect key="frame" x="131.33333333333334" y="390.33333333333331" width="112.66666666666666" height="25"/>
+                        <rect key="frame" x="131.33333333333334" y="390" width="112.66666666666666" height="25"/>
                         <color key="pageIndicatorTintColor" systemColor="systemFillColor"/>
                         <color key="currentPageIndicatorTintColor" systemColor="tintColor"/>
                     </pageControl>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-1K-Uez">
-                        <rect key="frame" x="341" y="390.33333333333331" width="24" height="24"/>
+                        <rect key="frame" x="341" y="390" width="24" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="24" id="7gl-xi-GQX"/>
                             <constraint firstAttribute="height" constant="24" id="F3B-r8-5lp"/>
@@ -114,13 +114,13 @@
                         <state key="normal" image="icn_save"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAp-pZ-ZgH">
-                        <rect key="frame" x="12" y="425.33333333333331" width="32.333333333333336" height="14.333333333333314"/>
+                        <rect key="frame" x="12" y="425" width="32.333333333333336" height="14.333333333333314"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5s-9q-qJ3">
-                        <rect key="frame" x="12" y="444.66666666666669" width="351" height="14.333333333333314"/>
+                        <rect key="frame" x="12" y="444.33333333333331" width="351" height="14.666666666666686"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -137,11 +137,10 @@
                         </state>
                     </button>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kj0-5a-8xr">
-                        <rect key="frame" x="0.0" y="46" width="375" height="336.33333333333331"/>
+                        <rect key="frame" x="0.0" y="46" width="375" height="336"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="375" id="E2h-ix-acq"/>
-                            <constraint firstAttribute="height" constant="336.32999999999998" id="zd3-BZ-C7a"/>
+                            <constraint firstAttribute="width" secondItem="kj0-5a-8xr" secondAttribute="height" multiplier="125:112" id="Qtl-2T-hB9"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="HPV-8k-GRa">
                             <size key="itemSize" width="375" height="349"/>
@@ -178,8 +177,6 @@
             <connections>
                 <outlet property="commentButton" destination="OCV-Dd-N5M" id="fxt-Rb-1Of"/>
                 <outlet property="imageCollectionView" destination="kj0-5a-8xr" id="Edi-5J-eYF"/>
-                <outlet property="imageHeightConstraint" destination="zd3-BZ-C7a" id="2bD-0w-WNe"/>
-                <outlet property="imageWidthConstraint" destination="E2h-ix-acq" id="Tam-d5-uXk"/>
                 <outlet property="likeButton" destination="9MT-8J-QNf" id="Dli-0E-Alv"/>
                 <outlet property="likeLabel" destination="jAp-pZ-ZgH" id="CzT-ez-QEI"/>
                 <outlet property="messageButton" destination="CS8-9P-ha6" id="amU-h1-vd8"/>
