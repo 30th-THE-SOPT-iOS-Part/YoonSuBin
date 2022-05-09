@@ -7,8 +7,7 @@
 
 import UIKit
 
-class SignUpNameViewController:
-    UIViewController {
+final class SignUpNameViewController: UIViewController {
     
     // MARK: - UI Component Part
     @IBOutlet weak var nameMessageLabel: UILabel!
@@ -25,7 +24,7 @@ class SignUpNameViewController:
     // MARK: - IBAction Part
     @IBAction func nextBtnDidTap(_ sender: Any) {
         /// push
-        guard let signUpPasswordVC = UIStoryboard(name: "SignUp", bundle: nil).instantiateViewController(withIdentifier: "SignUpPasswordViewController") as? SignUpPasswordViewController else { return }
+        guard let signUpPasswordVC = UIStoryboard(name: "SignUp", bundle: nil).instantiateViewController(withIdentifier: SignUpPasswordViewController.className) as? SignUpPasswordViewController else { return }
         
         signUpPasswordVC.userName = nameTextField.text
         
@@ -39,14 +38,7 @@ class SignUpNameViewController:
     // MARK: - Custom UI
     private func setUI() {
         /// Button
-        nextButton.layer.cornerRadius = 5
-        nextButton.setTitleColor(.white, for: .normal)
-        nextButton.setTitleColor(.white, for: .disabled)
         backButtonCustom()
-        
-        /// Label
-        nameMessageLabel.text = "새 계정에 사용할 사용자 이름을 선택하세요. 나중에 언제든지 변경할 수 있습니다."
-        self.nameMessageLabel.numberOfLines = 2
     }
     
     // MARK: - Custom Method Part

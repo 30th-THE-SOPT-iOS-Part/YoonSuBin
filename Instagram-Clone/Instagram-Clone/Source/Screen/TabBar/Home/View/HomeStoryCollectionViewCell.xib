@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeStoryCollectionViewCell" customModule="Instagram_Clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="58" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="58" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6gW-tb-Py7">
+                        <rect key="frame" x="5" y="6" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="Tw2-Q4-XIM"/>
+                            <constraint firstAttribute="width" secondItem="6gW-tb-Py7" secondAttribute="height" multiplier="1:1" id="soP-42-3Dp"/>
+                            <constraint firstAttribute="height" constant="48" id="ssz-Lg-JnV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Su-n9-mfB">
+                        <rect key="frame" x="15.666666666666664" y="56" width="27" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="2Rf-Qh-3Hn"/>
+            <constraints>
+                <constraint firstItem="6gW-tb-Py7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="8JD-0A-atM"/>
+                <constraint firstItem="3Su-n9-mfB" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="BMb-2m-Q5u"/>
+                <constraint firstItem="6gW-tb-Py7" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="TeG-qr-JLW"/>
+                <constraint firstItem="3Su-n9-mfB" firstAttribute="top" secondItem="6gW-tb-Py7" secondAttribute="bottom" constant="2" id="yGj-Rp-JnK"/>
+            </constraints>
+            <connections>
+                <outlet property="profileImageView" destination="6gW-tb-Py7" id="G8n-v1-JuT"/>
+                <outlet property="profileUsernameLabel" destination="3Su-n9-mfB" id="Clw-BK-hOg"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="93.103448275862078"/>
+        </collectionViewCell>
+    </objects>
+</document>

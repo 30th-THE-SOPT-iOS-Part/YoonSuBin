@@ -7,10 +7,9 @@
 
 import UIKit
 
-class AuthCompleteViewController:
-    UIViewController {
+final class AuthCompleteViewController: UIViewController {
     
-    // MARK: - Var & Let Part
+    // MARK: - Properties
     var userName: String?
     
     // MARK: - UI Component Part
@@ -21,7 +20,6 @@ class AuthCompleteViewController:
     // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
         setUserName()
     }
     
@@ -38,17 +36,10 @@ class AuthCompleteViewController:
         self.dismiss(animated: true, completion: nil)
     }
     
-    // MARK: - Custom UI
-    private func setUI() {
-        /// Button
-        completeButton.layer.cornerRadius = 5
-    }
-    
     // MARK: - Custom Method Part
     private func setUserName() {
         if let userName = userName {
             welcomeMessageLabel.text = "\(userName)님, Instagram에 오신 것을 환영합니다"
-            self.welcomeMessageLabel.numberOfLines = 2
         }
     }
 }

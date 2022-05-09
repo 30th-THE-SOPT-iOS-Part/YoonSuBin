@@ -7,10 +7,9 @@
 
 import UIKit
 
-class SignUpPasswordViewController:
-    UIViewController {
+final class SignUpPasswordViewController: UIViewController {
     
-    // MARK: - Var & Let Part
+    // MARK: - Properties
     var userName : String?
     
     // MARK: - UI Component Part
@@ -22,14 +21,13 @@ class SignUpPasswordViewController:
     // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
         checkTextField()
     }
     
     // MARK: - IBAction Part
     @IBAction func nextBtnDidTap(_ sender: Any) {
         /// pop
-        guard let authCompleteVC = UIStoryboard(name: "AuthComplete", bundle: nil).instantiateViewController(withIdentifier: "AuthCompleteViewController") as? AuthCompleteViewController else { return }
+        guard let authCompleteVC = UIStoryboard(name: "AuthComplete", bundle: nil).instantiateViewController(withIdentifier: AuthCompleteViewController.className) as? AuthCompleteViewController else { return }
         
         authCompleteVC.userName = userName
         
@@ -46,18 +44,6 @@ class SignUpPasswordViewController:
     @IBAction func showPasswordBtnDidTap(_ sender: UIButton) {
         sender.isSelected.toggle()
         passwordTextField.isSecureTextEntry = !sender.isSelected
-    }
-    
-    // MARK: - Custom UI
-    private func setUI() {
-        /// Button
-        nextButton.layer.cornerRadius = 5
-        nextButton.setTitleColor(.white, for: .normal)
-        nextButton.setTitleColor(.white, for: .disabled)
-        
-        /// Label
-        passwordMessageLabel.text = "비밀번호를 저장할 수 있으므로 iCloud® 기기에서 로그인 정보를 입력하지 않아도 됩니다."
-        self.passwordMessageLabel.numberOfLines = 2
     }
     
     // MARK: - Custom Method Part
