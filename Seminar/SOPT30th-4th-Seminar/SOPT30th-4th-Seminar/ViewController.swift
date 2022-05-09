@@ -33,22 +33,21 @@ extension ViewController {
             email: email,
             password: password) { response in
                 switch response {
-            case .success(let data):
-                guard let data = data as? LoginResponse else { return }
-                print(data)
-                self.alert(message: data.message!)
-            case .requestErr(let err):
-                print(err)
-            case .pathErr:
-                print("pathErr")
-            case .serverErr:
-                print("serverErr")
-            case .networkFail:
-                print("networkFail")
+                case .success(let data):
+                    guard let data = data as? LoginResponse else { return }
+                    print(data)
+                    self.alert(message: data.message!)
+                case .requestErr(let err):
+                    print(err)
+                case .pathErr:
+                    print("pathErr")
+                case .serverErr:
+                    print("serverErr")
+                case .networkFail:
+                    print("networkFail")
+                }
             }
-        }
     }
-    
     // 알림창을 띄우는 함수입니다.
     func alert(message: String) {
         let alertVC = UIAlertController(title: message, message: nil, preferredStyle: .alert)
