@@ -14,6 +14,10 @@
 		8EB6A1BA28252D53005C5A12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6A1B828252D53005C5A12 /* Main.storyboard */; };
 		8EB6A1BC28252D54005C5A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6A1BB28252D54005C5A12 /* Assets.xcassets */; };
 		8EB6A1BF28252D54005C5A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6A1BD28252D54005C5A12 /* LaunchScreen.storyboard */; };
+		8EB6A1CF282656AE005C5A12 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6A1CE282656AE005C5A12 /* APIConstants.swift */; };
+		8EB6A1D1282657B3005C5A12 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6A1D0282657B3005C5A12 /* NetworkResult.swift */; };
+		8EB6A1D3282659BC005C5A12 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6A1D2282659BC005C5A12 /* LoginModel.swift */; };
+		8EB6A1D528265C86005C5A12 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB6A1D428265C86005C5A12 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		8EB6A1BB28252D54005C5A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB6A1BE28252D54005C5A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EB6A1C028252D54005C5A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EB6A1CE282656AE005C5A12 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		8EB6A1D0282657B3005C5A12 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		8EB6A1D2282659BC005C5A12 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		8EB6A1D428265C86005C5A12 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		F05403A7AAB98C5C4B15CF53 /* Pods-SOPT30th-4th-Seminar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT30th-4th-Seminar.release.xcconfig"; path = "Target Support Files/Pods-SOPT30th-4th-Seminar/Pods-SOPT30th-4th-Seminar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +64,6 @@
 				6EF6F25C472F3DC22985F339 /* Pods-SOPT30th-4th-Seminar.debug.xcconfig */,
 				F05403A7AAB98C5C4B15CF53 /* Pods-SOPT30th-4th-Seminar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,10 +88,14 @@
 		8EB6A1B128252D53005C5A12 /* SOPT30th-4th-Seminar */ = {
 			isa = PBXGroup;
 			children = (
-				8EB6A1B228252D53005C5A12 /* AppDelegate.swift */,
-				8EB6A1B428252D53005C5A12 /* SceneDelegate.swift */,
+				8EB6A1CE282656AE005C5A12 /* APIConstants.swift */,
+				8EB6A1D0282657B3005C5A12 /* NetworkResult.swift */,
+				8EB6A1D2282659BC005C5A12 /* LoginModel.swift */,
+				8EB6A1D428265C86005C5A12 /* UserService.swift */,
 				8EB6A1B628252D53005C5A12 /* ViewController.swift */,
 				8EB6A1B828252D53005C5A12 /* Main.storyboard */,
+				8EB6A1B228252D53005C5A12 /* AppDelegate.swift */,
+				8EB6A1B428252D53005C5A12 /* SceneDelegate.swift */,
 				8EB6A1BB28252D54005C5A12 /* Assets.xcassets */,
 				8EB6A1BD28252D54005C5A12 /* LaunchScreen.storyboard */,
 				8EB6A1C028252D54005C5A12 /* Info.plist */,
@@ -207,6 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB6A1D528265C86005C5A12 /* UserService.swift in Sources */,
+				8EB6A1CF282656AE005C5A12 /* APIConstants.swift in Sources */,
+				8EB6A1D1282657B3005C5A12 /* NetworkResult.swift in Sources */,
+				8EB6A1D3282659BC005C5A12 /* LoginModel.swift in Sources */,
 				8EB6A1B728252D53005C5A12 /* ViewController.swift in Sources */,
 				8EB6A1B328252D53005C5A12 /* AppDelegate.swift in Sources */,
 				8EB6A1B528252D53005C5A12 /* SceneDelegate.swift in Sources */,
