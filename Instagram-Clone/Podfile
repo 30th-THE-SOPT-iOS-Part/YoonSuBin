@@ -7,4 +7,5 @@ target 'Instagram-Clone' do
 
   # Pods for Instagram-Clone
   pod 'Alamofire'
+  pod 'Kingfisher'
 end

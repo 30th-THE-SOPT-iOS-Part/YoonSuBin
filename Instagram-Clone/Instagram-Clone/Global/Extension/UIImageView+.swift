@@ -6,18 +6,24 @@
 //
 
 import UIKit
+import Kingfisher
 
-extension UIImageView{
-    /// img URL에서 이미지를 로드하는 함수입니다.
-    func loadURLImage(_ imgURL: String) {
-        let url = URL(string: imgURL)
-        if url != nil {
-            DispatchQueue.global().async {
-                guard let data = try? Data(contentsOf: url!) else { return }
-                DispatchQueue.main.async {
-                    self.image = UIImage(data: data)?.resize(length: 375)
-                }
-            }
-        }
-    }
+extension UIImageView {
+    func setImage(with urlString: String) {
+          let cache = ImageCache.default
+          cache.retrieveImage(forKey: urlString, options: nil) { result in // 캐시에서 키를 통해 이미지를 가져온다.
+              switch result {
+              case .success(let value):
+                  if let image = value.image { // 만약 캐시에 이미지가 존재한다면
+                      self.image = image // 바로 이미지를 셋한다.
+                  } else {
+                      guard let url = URL(string: urlString) else { return }
+                      let resource = ImageResource(downloadURL: url, cacheKey: urlString) // URL로부터 이미지를 다운받고 String 타입의 URL을 캐시키로 지정하고
+                      self.kf.setImage(with: resource) // 이미지를 셋한다.
+                  }
+              case .failure(let error):
+                  print(error)
+              }
+          }
+      }
 }
