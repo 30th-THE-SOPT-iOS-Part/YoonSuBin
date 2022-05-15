@@ -22,6 +22,7 @@ final class SignUpPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         checkTextField()
+        hideKeyboardWhenTappedAround()
     }
     
     // MARK: - IBAction Part

@@ -19,6 +19,7 @@ final class SignUpNameViewController: UIViewController {
         super.viewDidLoad()
         setUI()
         checkTextField()
+        hideKeyboardWhenTappedAround()
     }
     
     // MARK: - IBAction Part
