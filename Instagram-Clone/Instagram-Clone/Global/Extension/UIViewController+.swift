@@ -10,12 +10,11 @@ import UIKit
 extension UIViewController {
     
     static var className: String {
-             NSStringFromClass(self.classForCoder()).components(separatedBy: ".").last!
-         }
+        NSStringFromClass(self.classForCoder()).components(separatedBy: ".").last!
+    }
 
     var className: String {
         NSStringFromClass(self.classForCoder).components(separatedBy: ".").last!
-        
     }
     
     /// 네비게이션바 Left Back Button Custom
