@@ -36,13 +36,7 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func loginBtnDidTap(_ sender: Any) {
-        /// present
-        guard let authCompleteVC = UIStoryboard(name: "AuthComplete", bundle: nil).instantiateViewController(withIdentifier: AuthCompleteViewController.className) as? AuthCompleteViewController else { return }
-        
-        authCompleteVC.userName = nameTextField.text
-
-        authCompleteVC.modalPresentationStyle = .fullScreen
-        self.present(authCompleteVC, animated: true, completion: nil)
+        requestLogin()
     }
     
     @IBAction func signUpBtnDidTap(_ sender: Any) {
@@ -83,5 +77,40 @@ final class LoginViewController: UIViewController {
         
         loginButton.isEnabled = false
         loginButton.backgroundColor = UIColor.lightBlue
+    }
+}
+
+// MARK: - API: Auth Login Service
+extension LoginViewController {
+    func requestLogin() {
+        guard let name = nameTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        AuthService.shared.login(
+            name: name,
+            email: name,
+            password: password) { [weak self] responseData in
+                switch responseData {
+                case .success(let loginResponse):
+                    guard let response = loginResponse as? LoginResponse else { return }
+                    if response.data != nil {
+                        self?.alertAction(title: "로그인 성공", message: response.message, okAction: nil)
+                    }
+                case .requestErr(let loginResponse):
+                    guard let response = loginResponse as? LoginResponse else { return }
+                    let statusCode = response.status
+                    if statusCode == 404 {
+                        self?.alert(title: "로그인 실패", message: "이메일에 해당하는 사용자 정보가 없습니다.")
+                    } else {
+                        self?.alert(title: "로그인 실패", message: "잘못된 비밀번호입니다.")
+                    }
+                case .pathErr:
+                    self?.alert(title: "로그인 실패", message: "PATH ERROR")
+                case .serverErr:
+                    print("SERVER ERROR")
+                case .networkFail:
+                    print("NETWORK FAIL")
+                }
+            }
     }
 }
