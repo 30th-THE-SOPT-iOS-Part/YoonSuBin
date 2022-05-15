@@ -23,6 +23,5 @@ final class HomeFeedCollectionViewCell: UICollectionViewCell {
     // MARK: - Story Data Model과 연결
     func setImageModel(feedImage: String){
       feedImageView.setImage(with: feedImage)
-//        feedImageView.loadURLImage(feedImage)
     }
 }
