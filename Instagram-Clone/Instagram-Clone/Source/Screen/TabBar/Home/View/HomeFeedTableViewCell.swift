@@ -27,8 +27,6 @@ final class HomeFeedTableViewCell: UITableViewCell {
     @IBOutlet weak var moreButton: UIButton!
     
     @IBOutlet weak var imageCollectionView: UICollectionView!
-    @IBOutlet weak var imageWidthConstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var commentButton: UIButton!
