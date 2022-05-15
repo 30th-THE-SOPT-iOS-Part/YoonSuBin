@@ -31,6 +31,7 @@ final class SignUpPasswordViewController: UIViewController {
         guard let authCompleteVC = UIStoryboard(name: "AuthComplete", bundle: nil).instantiateViewController(withIdentifier: AuthCompleteViewController.className) as? AuthCompleteViewController else { return }
         
         authCompleteVC.userName = userName
+        authCompleteVC.userPassword = passwordTextField.text
         
         self.present(authCompleteVC, animated: true) {
             self.navigationController?.popToRootViewController(animated: false)
