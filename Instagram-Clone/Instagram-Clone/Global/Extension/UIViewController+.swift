@@ -16,9 +16,7 @@ extension UIViewController {
     var className: String {
         NSStringFromClass(self.classForCoder).components(separatedBy: ".").last!
     }
-    
-    }
-    
+        
     /// 네비게이션바 Left Back Button Custom
     func backButtonCustom() {
         let backBtnIcon = UIImage(named: "icn_back")
