@@ -11,9 +11,7 @@ extension UIImage {
     
    static func load(named imageName: String) -> UIImage {
        /// String 타입으로 입력받은 이미지를 UIImage로 변환하는 함수입니다.
-        guard let image = UIImage(named: imageName, in: nil, compatibleWith: nil) else {
-            return UIImage()
-        }
+        guard let image = UIImage(named: imageName, in: nil, compatibleWith: nil) else { return UIImage() }
         image.accessibilityIdentifier = imageName
         return image
     }
@@ -26,5 +24,5 @@ extension UIImage {
         let resizedImage = UIGraphicsImageRenderer(size: size).image {
             _ in draw(in: CGRect(origin: .zero, size: size)) }
         return resizedImage
-        }
+    }
 }
