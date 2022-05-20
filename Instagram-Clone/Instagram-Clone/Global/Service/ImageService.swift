@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-struct ImageService {
+class ImageService {
     static let shared = ImageService()
     
     private init() {}

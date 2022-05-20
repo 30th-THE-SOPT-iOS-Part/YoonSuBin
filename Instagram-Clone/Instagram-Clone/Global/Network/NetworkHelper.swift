@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NetworkHelper {
+class NetworkHelper {
     private init() {}
     
     // MARK: - 상태 코드와 데이터, decoding type을 가지고 통신의 결과를 핸들링하는 함수

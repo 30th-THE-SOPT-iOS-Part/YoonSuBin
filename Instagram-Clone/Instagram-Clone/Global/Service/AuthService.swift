@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-struct AuthService {
+class AuthService {
     static let shared = AuthService()
       
     private init() {}
