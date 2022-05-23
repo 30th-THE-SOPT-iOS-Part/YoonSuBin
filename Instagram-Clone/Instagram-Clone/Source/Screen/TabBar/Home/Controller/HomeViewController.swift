@@ -13,6 +13,8 @@ final class HomeViewController: UIViewController {
     private enum SectionLayout: CaseIterable {
         case story, feed
     }
+    
+    private var feedModel = HomeFeedDataModel.feedSampleData
 
     // MARK: - UI Component Part
     @IBOutlet weak var homeTableView: UITableView!
@@ -21,6 +23,7 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNib()
+        loadImages()
     }
     
     // MARK: - TableViewCell registerNib Part
@@ -70,7 +73,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case .feed:
             guard let feedCell = homeTableView.dequeueReusableCell(withIdentifier: HomeFeedTableViewCell.identifier, for: indexPath) as? HomeFeedTableViewCell else { return UITableViewCell() }
             
-            feedCell.model = HomeFeedDataModel.feedSampleData[indexPath.row]
+            feedCell.model = feedModel[indexPath.row]
+            feedCell.imageCollectionView.reloadData()
             
             feedCell.likesButtonEvent = {
                 if feedCell.likeButton.isSelected == true {
@@ -81,6 +85,27 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 feedCell.likeLabel.text = "좋아요 \(feedCell.likesCount!)개"
             }
             return feedCell
+        }
+    }
+}
+
+//MARK: - API: Image Service
+extension HomeViewController {
+    func loadImages() {
+        ImageService.shared.getImage { [weak self] responseData in
+            switch responseData {
+            case .success(let imageData):
+                guard let data = imageData as? [ImageData] else { return }
+                for i in 0...(self?.feedModel.count ?? 0)-1 {
+                    for j in (i*3)...(i*3+2) {
+                        self?.feedModel[i].photo.append(data[j].download_url)
+                    }
+                }
+                self?.homeTableView.reloadData()
+            default:
+                print("LOAD IMAGES ERROR")
+                return
+            }
         }
     }
 }
