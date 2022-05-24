@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Up-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PopUp" id="Y6W-OH-hqX" customClass="PopUp" customModule="BasicCustomView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 커스텀 팝업" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxT-im-AcV">
+                                <rect key="frame" x="157.5" y="94" width="99.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qun-HZ-LNI">
+                                <rect key="frame" x="147.5" y="431" width="119" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="팝업 띄우기 버튼"/>
+                                <connections>
+                                    <action selector="showPopUpTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="42d-79-w6T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BxT-im-AcV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="67E-yN-0Uc"/>
+                            <constraint firstItem="BxT-im-AcV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="H8m-F8-B9c"/>
+                            <constraint firstItem="Qun-HZ-LNI" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="N9l-Ab-1cR"/>
+                            <constraint firstItem="Qun-HZ-LNI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="sMF-Jk-5N5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pop Up" image="moon" catalog="system" selectedImage="moon.fill" id="3y4-8A-suu"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+        <!--Custom Pop Up-->
+        <scene sceneID="cnA-L1-2qv">
+            <objects>
+                <viewController storyboardIdentifier="CustomPopUp" id="fdM-X0-zuB" customClass="CustomPopUp" customModule="BasicCustomView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZzS-Xz-vG7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grS-Xz-rab">
+                                <rect key="frame" x="50" y="344" width="314" height="218"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하이" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnt-jk-LsK">
+                                        <rect key="frame" x="142" y="98.5" width="30" height="21"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="vnt-jk-LsK" firstAttribute="centerX" secondItem="grS-Xz-rab" secondAttribute="centerX" id="2em-56-tnk"/>
+                                    <constraint firstItem="vnt-jk-LsK" firstAttribute="centerY" secondItem="grS-Xz-rab" secondAttribute="centerY" id="G63-h6-xsz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4sk-L4-E5T"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4sk-L4-E5T" firstAttribute="bottom" secondItem="grS-Xz-rab" secondAttribute="bottom" constant="300" id="7Cv-pW-5oE"/>
+                            <constraint firstItem="grS-Xz-rab" firstAttribute="leading" secondItem="4sk-L4-E5T" secondAttribute="leading" constant="50" id="Jby-ek-QHk"/>
+                            <constraint firstItem="grS-Xz-rab" firstAttribute="top" secondItem="4sk-L4-E5T" secondAttribute="top" constant="300" id="S3T-wF-6i0"/>
+                            <constraint firstItem="4sk-L4-E5T" firstAttribute="trailing" secondItem="grS-Xz-rab" secondAttribute="trailing" constant="50" id="cXl-qP-ibE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyp-3R-aQD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="moon" catalog="system" width="128" height="121"/>
+        <image name="moon.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
