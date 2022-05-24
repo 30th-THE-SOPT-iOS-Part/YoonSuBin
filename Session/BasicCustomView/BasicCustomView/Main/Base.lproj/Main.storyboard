@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rtX-kd-2pL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Znz-XN-Z0G">
+            <objects>
+                <tabBarController id="rtX-kd-2pL" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C2R-fV-GNe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemIndigoColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3qr-Kr-sC7" kind="relationship" relationship="viewControllers" id="mjq-TV-0XW"/>
+                        <segue destination="vIW-Gf-FK1" kind="relationship" relationship="viewControllers" id="FgS-TY-xVr"/>
+                        <segue destination="Ylr-OV-f1p" kind="relationship" relationship="viewControllers" id="vsp-BI-1ey"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HV8-2b-ll1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-790" y="480"/>
+        </scene>
+        <!--PopUp-->
+        <scene sceneID="wfR-jB-AGz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PopUp" id="3qr-Kr-sC7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="jSg-Y1-rPG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLs-QW-igp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="294"/>
+        </scene>
+        <!--BottomSheet-->
+        <scene sceneID="dwf-di-ceP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BottomSheet" id="vIW-Gf-FK1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="BhF-jt-EBp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Feq-dq-HwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="479"/>
+        </scene>
+        <!--ViewPager-->
+        <scene sceneID="etR-qE-M4s">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ViewPager" id="Ylr-OV-f1p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ibp-5z-a0V"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7e4-x1-Bwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37" y="635"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
