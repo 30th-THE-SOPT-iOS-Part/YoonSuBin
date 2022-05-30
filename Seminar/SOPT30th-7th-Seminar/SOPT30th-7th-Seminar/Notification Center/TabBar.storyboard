@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zIF-ll-7t2">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Nmv-bB-g0N">
+            <objects>
+                <tabBarController id="zIF-ll-7t2" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jpf-dV-s50">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemGray5Color"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1Lw-Dc-V4V" kind="relationship" relationship="viewControllers" id="Gzd-Ic-xav"/>
+                        <segue destination="Qsc-St-dyo" kind="relationship" relationship="viewControllers" id="eAA-Gr-yna"/>
+                        <segue destination="5fh-iI-H2Q" kind="relationship" relationship="viewControllers" id="pbJ-G4-QoA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DeR-YG-134" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-429" y="237"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="5ka-j6-VrX">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="1Lw-Dc-V4V" customClass="FirstViewController" customModule="SOPT30th_7th_Seminar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AsI-9G-fJs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="u3K-xs-bUj">
+                                <rect key="frame" x="20" y="331" width="335" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-8b-Ang">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0kR-jE-DLt"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="불 지르기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fireOnTapped:" destination="1Lw-Dc-V4V" eventType="touchUpInside" id="haO-5D-Fnj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBt-pN-dz1">
+                                        <rect key="frame" x="0.0" y="100" width="335" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cPf-I2-TjW"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="소방관 호출">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fireOffTapped:" destination="1Lw-Dc-V4V" eventType="touchUpInside" id="ptu-Q3-SO4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zC9-ub-FGF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="u3K-xs-bUj" firstAttribute="centerX" secondItem="AsI-9G-fJs" secondAttribute="centerX" id="MfO-le-QVE"/>
+                            <constraint firstItem="u3K-xs-bUj" firstAttribute="centerY" secondItem="AsI-9G-fJs" secondAttribute="centerY" id="Sjd-wJ-Okp"/>
+                            <constraint firstItem="zC9-ub-FGF" firstAttribute="trailing" secondItem="u3K-xs-bUj" secondAttribute="trailing" constant="20" id="mT0-ge-yAX"/>
+                            <constraint firstItem="u3K-xs-bUj" firstAttribute="leading" secondItem="zC9-ub-FGF" secondAttribute="leading" constant="20" id="yav-Tf-Ipv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="gamecontroller" catalog="system" selectedImage="gamecontroller.fill" id="vQM-7c-YmC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OD3-oT-s4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1175" y="979"/>
+        </scene>
+        <!--꼬부기네-->
+        <scene sceneID="Iiw-ZW-pqA">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="Qsc-St-dyo" customClass="SecondViewController" customModule="SOPT30th_7th_Seminar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bxy-fN-JAV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_fire" translatesAutoresizingMaskIntoConstraints="NO" id="abK-b2-rgi">
+                                <rect key="frame" x="50" y="94" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="31U-yh-lp8"/>
+                                    <constraint firstAttribute="height" constant="100" id="Kro-eA-rzA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icn_fire" translatesAutoresizingMaskIntoConstraints="NO" id="gjD-jx-9Mn">
+                                <rect key="frame" x="125" y="429" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Gni-3s-Stx"/>
+                                    <constraint firstAttribute="height" constant="200" id="qWu-f2-BWe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kcx-Kt-eX4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="abK-b2-rgi" firstAttribute="leading" secondItem="Kcx-Kt-eX4" secondAttribute="leading" constant="50" id="BQy-uj-JMJ"/>
+                            <constraint firstItem="Kcx-Kt-eX4" firstAttribute="bottom" secondItem="gjD-jx-9Mn" secondAttribute="bottom" constant="100" id="fL7-Pt-j3f"/>
+                            <constraint firstAttribute="trailing" secondItem="gjD-jx-9Mn" secondAttribute="trailing" constant="50" id="fls-1i-Kip"/>
+                            <constraint firstItem="abK-b2-rgi" firstAttribute="top" secondItem="Kcx-Kt-eX4" secondAttribute="top" constant="50" id="qeX-Em-B40"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="꼬부기네" image="music.note.house" catalog="system" selectedImage="music.note.house.fill" id="hiC-NY-yxm"/>
+                    <connections>
+                        <outletCollection property="fires" destination="abK-b2-rgi" collectionClass="NSMutableArray" id="f8O-B3-l4N"/>
+                        <outletCollection property="fires" destination="gjD-jx-9Mn" collectionClass="NSMutableArray" id="5SE-gu-QKe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p2H-1F-x7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-429" y="978"/>
+        </scene>
+        <!--파이리네-->
+        <scene sceneID="b5V-Z5-dhT">
+            <objects>
+                <viewController storyboardIdentifier="ThirdViewController" id="5fh-iI-H2Q" customClass="ThirdViewController" customModule="SOPT30th_7th_Seminar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JOy-tu-cGS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="icn_fire" translatesAutoresizingMaskIntoConstraints="NO" id="PPT-cM-a2c">
+                                <rect key="frame" x="37.666666666666657" y="256" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="I8W-BQ-OHt"/>
+                                    <constraint firstAttribute="height" constant="300" id="WO6-6S-KI0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kv8-ca-HmZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PPT-cM-a2c" firstAttribute="centerY" secondItem="JOy-tu-cGS" secondAttribute="centerY" id="6Jc-6W-Xi9"/>
+                            <constraint firstItem="PPT-cM-a2c" firstAttribute="centerX" secondItem="JOy-tu-cGS" secondAttribute="centerX" id="TBx-57-lrF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="파이리네" image="house.circle" catalog="system" selectedImage="house.circle.fill" id="KOQ-dX-PQU"/>
+                    <connections>
+                        <outletCollection property="fires" destination="PPT-cM-a2c" collectionClass="NSMutableArray" id="0ja-3F-WJD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f12-Ig-hN7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="988"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="80"/>
+        <image name="house.circle" catalog="system" width="128" height="121"/>
+        <image name="house.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="icn_fire" width="603" height="603"/>
+        <image name="music.note.house" catalog="system" width="128" height="106"/>
+        <image name="music.note.house.fill" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
