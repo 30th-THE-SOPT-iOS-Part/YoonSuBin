@@ -14,10 +14,10 @@
 | `2주차` | AutoLayout, StackView, TabBarController | ☑️ | ☑️ |
 | `3주차` | ScrollView, TableView, CollectionView | ☑️ | ☑️ |
 | `4주차` | 서버와 클라이언트 이해, RESTful API, Alamofire를 활용한 실습 | ☑️ | ☑️ |
-| `5주차` | 디자인 합동 세미나 |  |  |
-| `6주차` | 서버 합동 세미나 |  |  |
-| `7주차` | 서버 통신 및 데이터 전달 심화 : 서버 통신 추가 실습 |  |  |
-| `8주차` | 앱잼을 위한 프로젝트 기초 세팅 및 그 외 꿀팁 소개 |  |  |
+| `5주차` | 디자인 합동 세미나 | ☑️ | ☑️ [링크](https://github.com/THE-SOPT-30th-DaangnMarket-Team16-2/DaangnMarket-iOS)|
+| `6주차` | 서버 합동 세미나 | ☑️ | ☑️ [링크](https://github.com/THE-SOPT-30th-DaangnMarket-Team16-2/DaangnMarket-iOS) |
+| `7주차` | 서버 통신 및 데이터 전달 심화 : 서버 통신 추가 실습 | ☑️ | - |
+| `8주차` | 앱잼을 위한 프로젝트 기초 세팅 및 그 외 꿀팁 소개 |  | - |
 
 ---
 
@@ -29,5 +29,5 @@
 
 3. 각종 컨벤션 지키기
 
-`+ 아키텍처, 프레임워크, 코드베이스UI 따로 공부하기 ! ! !`
+`+ 아키텍처, 프레임워크, 코드베이스 따로 공부하기 ! ! !`
 
