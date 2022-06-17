@@ -1,6 +1,6 @@
 # 7주차 과제 🔫
 
-## 1️⃣ 기본 과제 : 서버통신 URLSession, Alamofire, Moya 비교하기
+## 1️⃣ 기본과제 : 서버통신 URLSession, Alamofire, Moya 비교하기
 
 iOS에서는 서버와 통신하기 위해 기본적으로 Foundation의 `URLSession`이라는 API를 사용하고 있다. `URLSession`은 로우레벨의 코드를 작성할 수 있고, 다른 프레임워크를 사용할 필요가 없다는 장점이 있지만 사용이 복잡하고 코드의 가독성이 좋지 않다는 단점이 있다.
 
@@ -10,12 +10,23 @@ iOS에서는 서버와 통신하기 위해 기본적으로 Foundation의 `URLSes
 
 iOS 서버통신에 자주 사용되는 `URLSession`, `Alamofire`, `Moya`에 대해 간단히 비교해보도록 하자.
 
+<br>
 
-> **참고💡** 추상화란?**
+> **참고💡** 추상화란?
 > 
-> : 객체들의 공통된 부분만 따로 뽑아, 재사용을 하기 쉽도록 구현하는 것을 뜻한다.
+> : 객체들의 공통된 부분만 따로 뽑아, 재사용을 하기 쉽도록 구현하는 것을 뜻한다. (쉽게 말해 일반화시키는 것)
+> 
+> **추상화의 장점** : 모델링, 코드의 재사용성, 코드의 가독성, 일관된 방향성 등이 공통적으로 언급이 된다.
+> 
+> 모델링을 통해 코드를 추상화하면 코드의 재사용성을 높일 수 있고, 코드의 가독성을 높여 코드를 이해하기 훨씬 더 쉽게 만들어 주기도 한다. 그리고 추상화된 코드는 자연스럽게 일관성을 가지게 된다.
 
-### HTTP, REST, 그리고 JSON에 대해 간락히 알고 넘어가자
+<br>
+
+---
+
+### 잠깐! HTTP, REST, 그리고 JSON에 대해 간락히 알고 넘어가자😁
+
+<br>
 
 **HTTP**는 서버에서 클라이언트로 데이터를 전송할 때 사용하는 Application Protocol이다. HTTP는 아래와 같이 다양한 request method를 정의하여 바람직한 동작들을 가리킬 수 있게 한다.
 
@@ -25,9 +36,13 @@ iOS 서버통신에 자주 사용되는 `URLSession`, `Alamofire`, `Moya`에 대
 - **PUT**: 데이터를 특정한 장소에 전송한다. (ex. user profile 업데이트 등)
 - **DELETE**: 특정 장소의 데이터를 삭제한다.
 
+<br>
+
 **JSON**은 JavaScript Object Notation의 약자로, 시스템 간 데이터 전달에 있어 직관적이고 사람이 읽을 수 있는 메커니즘을 제공한다. JSON은 string, boolean, array, object/dictionary, number, null과 같이 한정된 수의 데이터 타입만 가질 수 있다.
 
 Swift4 전에는 JSON에서 data object로, 또 그 반대로 변환하기 위해 JSONSerialization 클래스를 사용해야 했는데, 요즘은 Codable 프로토콜을 채택해 JSON과 data model 사이 자동화 변환을 이용한다.
+
+<br>
 
 **REST**는 REpresentational State Transfer의 약자로, 지속적인 웹 API를 만들기 위한 규칙의 집합이다. REST는 request 사이에 상태를 지속하지 않거나, cacheable request를 만들고, 동일한 인터페이스를 제공한다. 이를 통해 request간 데이터의 상태를 추적하지 않고도 API를 우리가 만든 앱에 통합하는 것을 쉽게할 수 있도록 한다.
 
@@ -58,6 +73,8 @@ class URLSession : NSObject
 - `URLSessionDownloadTask` : 데이터를 다운도르 할 때 사용
 
 `URLSession Delegate`을 통해서 네트워크 중간과정을 확인할 수 있다. (필수는 아님)
+
+<br>
 
 > URLSession 실습
 
@@ -141,7 +158,7 @@ dataTask.resume()
 위의 코드를 실행하면 아래와 같이 곡 제목, 가수만 50건이 출력된다.
 
 ```
---> tracks: [__lldb_expr_31.Track(title: "Love Poem", artistName: "IU"),
+--> tracks: [__lldb_expr_31.Track(title: "YOU & I", artistName: "IU"),
 ...
 ]
 ```
@@ -163,6 +180,8 @@ pod 'Alamofire', '~> 5.2' // 5.2 version
 ```
 
 cf. 설치한 라이브러리를 추가할 때 : `import Alamofire`
+
+<br>
 
 제공되는 대표 기능으로는 아래와 같다.
 
@@ -205,6 +224,8 @@ Moya는 URLSession을 추상화한 Alamofire를, 다시 추상화한 라이브�
 
 Moya 공식문서에 있는 대로 순서를 정리해보도록 하자.
 
+<br>
+
 ### 1. Service.swift 파일을 만든다.
 
 각 case는 개별적인 네트워크를 담당하게 된다. 파라미터는 개별 API 문서를 보고 필요한 경우에 따라 혹은 로직에 따라서 만든다.
@@ -217,6 +238,8 @@ enum CardService {
     case cardDelete(cardID: String)
 }
 ```
+
+<br>
 
 ### 2. extension을 통해 TargetType프로토콜을 추가로 준수하도록 하고, 필요한 속성을 Service.swift 에 추가로 구현한다.
 
@@ -304,8 +327,9 @@ extension CardService: TargetType {
 }
 ```
 
-### 3. 제네릭 타입으로 Service를 가진 MoyaProvider 인스턴스를 생성한다.
+<br>
 
+### 3. 제네릭 타입으로 Service를 가진 MoyaProvider 인스턴스를 생성한다.
 
 ```swift
 var cardProvider = MoyaProvider<CardService>(plugins: [NetworkLoggerPlugin()])
@@ -462,29 +486,7 @@ public class CardAPI {
 
 <br>
 
-## 2️⃣ 도전 과제 : 데이터 전달 방식 4가지 정리하기
-
-## 1. Property로 직접 접근
-
-
-## 2. Delegate Pattern
-
-
-## 3. Notification Center
-
-
-## 4. Closure
-
-
-
-
-<br>
-
----
-
-<br>
-
-## 3️⃣ 추가 공부할 것 정리
+## 2️⃣ 추가 공부할 것 정리
 
 - [ ] 코드베이스 공부하기 (→ 스냅킷 이용해서 인스타 과제를 스보기반에서 코드기반으로 짜기)
 
@@ -496,17 +498,15 @@ public class CardAPI {
 
 <br>
 
---- 
-
-### 
-
 ---
 
 ### 참고자료
 
-[[iOS] 데이터 전달 방식 4가지 - property, delegate, closure, NotificationCenter](https://hellozo0.tistory.com/365)
+[URLSession | Apple Developer Documentation](https://developer.apple.com/documentation/foundation/urlsession)
 
-[화면 간 데이터전달하기(쉬움주의, 따라만해)](https://katarnios.tistory.com/28)
+[Alamofire 깃허브 공식문서](https://github.com/Alamofire/Alamofire)
+
+[Moya 깃허브 공식문서](https://github.com/Moya/Moya)
 
 [[iOS - swift] 1. Alamofire 사용 방법 - Network Layer 구현 (Moya 프레임워크처럼 사용하는 방법)](https://ios-development.tistory.com/731)
 
@@ -516,10 +516,7 @@ public class CardAPI {
 
 [Alamofire 5 Tutorial for iOS: Getting Started](https://www.raywenderlich.com/6587213-alamofire-5-tutorial-for-ios-getting-started#toc-anchor-009)
 
-[URLSession | Apple Developer Documentation](https://developer.apple.com/documentation/foundation/urlsession)
-
 [Fetching Website Data into Memory](https://developer.apple.com/documentation/foundation/url_loading_system/fetching_website_data_into_memory)
-
 
 [Swift, URLSession가 무엇인지, 어떻게 사용하는지 알아봅니다.](https://devmjun.github.io/archive/URLsession)
 
